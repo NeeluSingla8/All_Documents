@@ -38,3 +38,50 @@
 "nosql databases","traditional analytics","unstructured data","big data","apache software foundation","big data processing","big data market","distributed file system","big data vendor landscape","massively parallel analytic databases",
 
 "difference data","null hypothesis","dynamic forecasting","recommendations/business implications","data & methodology","fuller test","brent crude prices","developing arima model","absolute percentage error","duckey fuller test",
+
+
+"change","saxena","conclave","president","vice president",
+
+
+"media houses","appreciative inquiry","content team","mr xyz","feel comfortable","mr abc","viacom 18 make employees","viacom 18 media pvt","complete diverse background","promoting equal opportunities",
+
+
+"succession management process","succession planning process","leadership gap indicator","management readiness profile","management readiness index","selection reports fue","work life indicator","computerized methods easily","reduce business costs","dislike public speaking",
+
+
+
+"sufficient capital market","foreign direct investments","public sector undertakings","empanelled lead managers","vsnl gdr issue","special purpose vehicle","selecting lead managers","modern food industries","allotted initial issuances","6 top lead managers",
+
+
+"ge culture","expatriate management","employee life","jack welch","hr practices","chief recruiter","free food","employee life cycle","silicon valley firms","additional equity grants",
+
+
+"expertise","<company","school","nmims","schools","flagship mba","professional forums","core courses","general management","mba banking",
+
+
+"parallel lines","daimler company limited","generally crossed cheque","assistant directors general","specially crossed cheque","registered office address","information technology act","ultra vires act","provide legal recognition","registered office address clause",
+
+
+"software life cycle","industrial training                   february","puter science & engineering","life cycle models","java database connectivity api","sun glassfish enterprise server","web drive plan maintenance","client program makes method calls","alpha net staff augmentation","alpha net technologies pvt",
+
+
+"branch head","product portfolio","product offerings","organizational theory","literature review","constitutes forces","primary research","kotak mahindra bank","indian banking industry","indian banking sector",
+
+
+"project","linkedin","viacom18","organization","viacom 18",
+
+'27th street apt#226'
+'ierf application summary'
+'regular mail'
+'los angeles'
+'general certification'
+'file number'
+'neelu singla'
+'summary'
+'https'
+'science'
+'university'
+'receipt'
+'apply'
+'studies'
+
