@@ -36,3 +36,5 @@
 
 
 "nosql databases","traditional analytics","unstructured data","big data","apache software foundation","big data processing","big data market","distributed file system","big data vendor landscape","massively parallel analytic databases",
+
+"difference data","null hypothesis","dynamic forecasting","recommendations/business implications","data & methodology","fuller test","brent crude prices","developing arima model","absolute percentage error","duckey fuller test",
