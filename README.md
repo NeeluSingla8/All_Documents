@@ -33,3 +33,6 @@
 
 
 "discarding puton_blockc_blockb_blockb","discarding puton_blockc_blockc_blocka","discarding puton_blocka_blocka_table","discarding puton_blockb_blockc_blockc","discarding puton_blockc_blockc_blockb","give file","puton_blockc_blockb_blocka newtower_blockb_table","puton_blocka_blockb_table puton_blockb_blockc_table","newtower_blockb_blockc puton_blockb_blocka_table newtower_blockc_blockb","prev time step",
+
+
+"nosql databases","traditional analytics","unstructured data","big data","apache software foundation","big data processing","big data market","distributed file system","big data vendor landscape","massively parallel analytic databases",
