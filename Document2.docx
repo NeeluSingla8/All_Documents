@@ -1,0 +1,208 @@
+
+Software Requirements Specification
+for
+Product Master UI
+Version 1.0 approved
+Prepared by Aanchal Jain
+Akamai Technologies
+27/03/14
+ 
+Table of Contents
+Table of Contents	ii
+1.	Introduction	1
+1.1	Purpose	1
+1.2	Intended Audience	1
+2.	Overall Description	1
+2.1	Product Perspective	1
+2.2	Product Functions	2
+2.3	User Classes and Characteristics	2
+2.4	Operating Environment	3
+2.5	Design and Implementation Constraints	3
+2.6	Assumptions and Dependencies	3
+3.	External Interface Requirements	4
+3.1	User Interfaces	4
+3.2	Hardware Interfaces	4
+3.3	Software Interfaces	4
+3.4	Communications Interfaces	4
+4.	System Features	5
+4.1	HTML tab to display the Option Groups a particular option is under	5
+4.2	Segregation of available and unavailable components while adding existing components to a project	5
+4.3	Displaying the hierarchical tree structure for categories – sub-categories – products	5
+4.4	Displaying the hierarchical tree structure for option group – sub-option groups – options	6
+4.5	Displaying the hierarchical tree structure for product – option groups – sub-option groups – options	6
+4.6	Displaying the hierarchical tree structure for option – option groups – sub-option groups – options	7
+5.	Other Nonfunctional Requirements	7
+5.1	Performance Requirements	7
+5.2	Safety Requirements	7
+5.3	Security Requirements	7
+5.4	Software Quality Attributes	7
+5.5	Business Rules	8
+Appendix A: Glossary	8
+
+
+
+ 
+1.	Introduction
+1.1	Purpose 
+The purpose of Product Master is no just to provide a User Interface (UI), but a very clean and simple User Experience (UX) to browse through all the Products of Akamai and their components along with all their pricing details. It also provides an easy and efficient way to allow a privileged set of employees to launch new products; its new components or new versions of products.
+1.2	Intended Audience:
+My teachers and evaluators can read this.
+2.	Overall Description
+2.1	Product Perspective
+In any product ordering system there are two main components - the product catalogue, which is a constantly updated list of products and the ordering system, which generates the order from the quote. A contract is then generated from the order to get the invoice. 
+A quote is the price of a product offered to the customer and can be changed to an order or an invoice when the customer is ready to buy. An order is a sale where no products have been delivered but the products and their quantity have been specified. An order can be changed to an invoice. An invoice is usually created when the products are delivered to the customer after full or partial billing has been done. An invoice can’t be changed to a quote or an order. 
+Initially all these tasks were performed manually, where the product catalogue was stored in an excel sheet and the orders and contracts were handwritten. Because this was a very inefficient and cumbersome process, the whole system was replaced. 
+The product catalogue was developed on a database and a new ordering system was created. This product catalogue, which is currently in use, had the following product structure:
+Solution -> Package -> Product -> Module -> Sub-Module -> Service-Feature,
+where the relationship between each level is that of aggregation. I.e. a solution is a group of packages, a package is a group of products, a product is a collection of modules and so on.
+And the ordering system, which is currently in use, was used to generate the orders. And Seibel (a Customer Relationship Management software) was used to generate and store the contracts.
+The project catalogue, momentum and Seibel posed the following issues:
+	Platform issues: Catalog sits on the database, which is located on premise
+	UI issues: The User Interface to launch new items is highly technical and not friendly for people who are going to launch new products
+	Package Submission errors: hard to debug (an error in 1 product in a package, in turn holds up the submission of the other products in that package) 
+	Data model Issues: All catalog concepts are modeled using database associations, requiring extensive data duplication and maintenance work
+	Highly Complex Structure.
+
+Hence, it was decided that the existing product catalogue and ordering system were to be replaced by a centralized Quoting/Contract system – Apttus; and Seibel was to be replace by Salesforce (another Customer Relationship Management software). This led to the launching of the project ‘Product Master’, which is to replace the existing product catalogue.
+
+When Akamai’s existing product-ordering system was planned to be replaced by Apttus, some of the existing functionalities were about to disappear. This is because, the user interface that was offered in existing product catalogue, is not supported by Apttus. This caused an alarm for different teams for their day-to-day operations. This was one of the driving factors for a similar look & led to the launching of the project, ‘Product Master’ which is to replace the existing product catalogue in Apttus. There are other reasons to consider building a new custom User Interface and not a usual Visual Force page (the Salesforce UI). The reasons include, but not limited to:
+- Great User experience through the UI, not just an ordinary UI
+- UI should be Intent-based
+- The process of launching products should be depicted and controlled via the UI and it should be even simpler and more effective than existing system
+- Navigation within different parts of the UI should be very easy and intuitive
+- Profile based access for different actions
+
+2.2	Product Functions
+Product Master is to serve two purposes. Namely:
+	To provide a browse interface to browse through all the Akamai products, their components and their pricing details showing all their relevant and necessary details.
+	To provide an interface for a certain privileged set of people to be able to launch new products, their components and their versions or to edit the existing ones. Adding them to a new project must be done for adding new components or editing existing ones. A project can only be created by those privileged set of people.
+2.3	User Classes and Characteristics
+The new rationalized structure in the product master is:
+Product -> (Option Groups -> Options)+ -> Features
+Few conceptual terms are explained in brief below:
+	Category: All the Akamai products are categorized based on their functionality. To provide more flexibility of categorizing products, we have allowed categories to have sub-categories, which again can have sub-categories till any level. The only constraint imposed is that a category/sub-category can either have sub-categories or products under it, not both.
+	Product: Product is a primary unit of sale, which by itself is of no value unless certain mandatory and optional options are attached to it. Products can be bought in ‘bundles’ to avail certain discount as per a set of certain pre-defined rules.
+	Option groups: An option group is an abstraction of options. Products have options groups through which options are attached to Product. An option group can even have sub-option groups, which again can have any number of sub-option groups. This nesting is possible till any level. Only constraint is that, any option group/sub-option group can either have sub-option groups or options, not both
+	Options: Options have features and Pricing used to customize products. They can be auto included and excluded using rules as per the mandatory or preselected conditions of the options with respect to the product it’s being associated with. They are re-usable across various products. Options can have option groups under it, which are similar to the option groups, described in the previous paragraph.
+	Features: The set of features under option are not context dependent (they don’t change based on the product under which option is sold) Features can have multiple engineering products. Engineering products are the features that need to be provisioned for use, so that the network usage can be monitored and billed accordingly. 
+
+Engineering products are context dependent. This Context is based on 2 things:
+•	The Option to which the Feature is attached
+•	The Product under which the Option is being sold
+	Pricelists: Pricelists include all the pricing details such as the charge type (standard price, platform fee, subscription fee, installation fee etc.), price type (recurring, one time or based on usage) frequency, applicable products etc. Pricelists have pricelist items which products/options are associated with.
+Product Master provides backward compatibility and supports the product structure of the existing product catalogue. The components that have the existing structure are called legacy components and the components that have the new rationalized structure, are called rationalized components.
+
+2.4	Operating Environment
+Salesforce gives us the ability to create multiple copies of your organization in separate environments for a variety of purposes, such as testing and training, without compromising the data and applications in your Salesforce production organization. These copies are called sandboxes. 
+There are many sandboxes used for Product Master. 
+
+2.5	Design and Implementation Constraints
+2.6	Assumptions and Dependencies
+Product Master has a huge dependency on the Salesforce cloud database and the Salesforce sandboxes. The major assumption here is that Apttus and Salesforce will continue to work as anticipated. 
+Even though there is flexibility is the product - option group – option - feature structure, we are assuming that this level of flexibility is sufficient for the components that will be developed in future.
+
+3.	External Interface Requirements
+3.1	User Interfaces
+Product Master implements two level Model-View-Controller architecture within Client-Server architecture. One layer of M-V-C is implemented on the client side and the next layer is implemented across the client-server. The client here refers to the User Interface and the server refers to the Salesforce cloud.
+
+Thus any functionality to be implemented on the User Interface involves implementation in each of the levels as shown below:
+[View (Client side) -> Controller (Client side) -> Model (Client side)] -> Controller (Salesforce Web services) -> Model (Salesforce Database)
+3.2	Hardware Interfaces
+The Product Master can be accessed from any system. The access is regulated based on the user profiles and roles. 
+3.3	Software Interfaces
+As Product Master is going to be run on the Salesforce cloud, all the database operations and communications will me automatically handles by the cloud. 
+The various languages, libraries and technologies used in Product Master are:
+
+1.	Server Side:
+a.	Apex (for SalesForce web services)
+b.	Visual Force (minimal usage)
+c.	SOQL (for Salesforce database access)
+2.	Client Side:
+a.	Javascript (for the client side models and controllers)
+b.	Angular JS (for the client side models and controllers)
+c.	Q (promise based – for asynchronous function calls)
+d.	Bootstrap (for responsive styling on the UI)
+e.	jQuery (for DOM manipulation)
+f.	HTML (for displaying items on the UI)
+g.	jsTree (for generating and rendering the hierarchical tree structures)
+
+3.4	Communications Interfaces
+	Product Master User Interface can be accessed in Google Chrome or Mozilla Firefox. 
+	Product Master uses the standard HTTP/TCP/IP protocols. 
+	Whenever the HTML page is opened, the controller associated with that page is executed. The controller for this particular HTML page is got from the second last component of the URL.
+	The function calls made from the controller to the model files are asynchronous to avoid waiting on those functions. Once a ‘Promise’ (response) for that function arrives, the returned data can be used. 
+4.	System Features
+
+The functionalities of Product Master that I’ve worked on are:
+4.1	HTML tab to display the Option Groups a particular option is under
+4.1.1	Description and Priority
+	When an option details are viewed on the User Interface, there is a new tab created called ‘Under Option Groups’, which lists all the option groups this particular option is under. 
+	Priority of this feature is medium
+4.1.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and an option is clicked under the options tab, there should be a tab on the right hand side of the page called ‘Under Option Groups’, which lists out all the option groups this particular option is under , when selected	
+4.2	Segregation of available and unavailable components while adding existing components to a project 
+4.2.1	Description and Priority
+	An existing product/option/option group/feature/price list can only be added to a project if it’s not a part of any other project. When a user tries to add an existing component, a UI appears that shows the segregated available components and unavailable components. The user can select what he wants to see based on a radio button selection. Incase of the unavailable components, the user can view the project and owner details of a particular component on hovering the mouse on that component.
+	Priority of this feature is high.
+4.2.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and a user tries to add an existing component to one of his projects, a UI appears that segregates the available and unavailable components.
+4.3	Displaying the hierarchical tree structure for categories – sub-categories – products 
+4.3.1	Description and Priority
+	When the category tab is selected, a hierarchical tree structure must appear that shows all the categories along with the subcategories and products under them in a sorted manner. The products are made clickable. When a particular product is clicked, all the product details of that particular product are displayed on the right side of the page. 
+	
+	Priority of this feature is high.
+4.3.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and the category tab is selected, a hierarchical tree structure must appear that shows all the categories along with the subcategories and products under them in a sorted manner. And when a product is clicked, the details of that product are displayed.
+		
+
+4.4	Displaying the hierarchical tree structure for option group – sub-option groups – options 
+4.4.1	Description and Priority
+	When the option group tab is selected, and a particular option group is clicked, a hierarchical tree structure must appear that shows that option group along with the sub-option groups and options under it in a sorted manner. The options are made clickable. When a particular option is clicked, all the option details of that particular option are displayed. 
+	Priority of this feature is high.
+4.4.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and the option group tab is selected, and an option group is clicked, a hierarchical tree structure must appear that shows that option group along with the sub-option groups and options under it in a sorted manner. And when an option is clicked, the details of that option are displayed.
+		
+
+
+4.5	Displaying the hierarchical tree structure for product – option groups – sub-option groups – options
+4.5.1	Description and Priority
+	When the product tab is selected, and a particular product is clicked, a hierarchical tree structure must appear that shows all the option groups associated with this product along with the sub-option groups and options under it in a sorted manner. The options are made clickable. When a particular option is clicked, all the option details of that particular option are displayed. 
+	Priority of this feature is high.
+4.5.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and the product tab is selected, and a particular product is clicked, a hierarchical tree structure must appear that shows all the option groups associated with this product along with the sub-option groups and options under it in a sorted manner. And when an option is clicked, the details of that option are displayed.
+		
+
+4.6	Displaying the hierarchical tree structure for option – option groups – sub-option groups – options
+4.6.1	Description and Priority
+	When the options tab is selected, and a particular option is clicked, a hierarchical tree structure must appear that shows all the option groups under this option along with the sub-option groups and options under it in a sorted manner. The options are made clickable. When a particular option is clicked, all the option details of that particular option are displayed. 
+	Priority of this feature is high.
+4.6.2	Stimulus/Response Sequences
+	When the Product Master UI is opened, and the options tab is selected, and a particular option is clicked, a hierarchical tree structure must appear that shows all the option groups under this option along with the sub-option groups and options under it in a sorted manner. And when an option is clicked, the details of that option are displayed.
+		
+	
+
+
+5.	Other Nonfunctional Requirements
+5.1	Performance Requirements
+Even though there is a huge amount of data on the database, it shouldn't reflect on the Product Master UI by causing any delay in rendering the page and the User Experience must be smooth. 
+5.2	Safety Requirements
+The browse page is read-only so there is safety. But when privileged users are launching new products or editing the existing ones, care should be taken as to not to hamper the existing data. 
+5.3	Security Requirements
+Not every person can view the Product Master UI or launch/edit components. The access provided to every user is highly regulated based on the user profiles and roles in the company.
+5.4	Software Quality Attributes
+The Product Master is being developed taking into consideration a lot of Software Quality attributes such as adaptability, availability, correctness, flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability, and usability. The Quality Assurance team of Product Master verifies these.
+5.5	Business Rules
+The profile assigned to me, gives me access to view/launch/edit components so that I can perform thorough unit testing of all the features that I’ve worked on.
+6.	Appendix A: Glossary
+
+•	DOM – Document Object Model
+•	HTML – Hyper Text Markup Language
+•	HTTP – Hyper Text Transfer Protocol
+•	IP – Internet Protocol
+•	SOQL – Salesforce Object Query Language
+•	TCP – Transmission Control Protocol
+•	UI – User Interface
+•	UX – User Experience
+
+
+
