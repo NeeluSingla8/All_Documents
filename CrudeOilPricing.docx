@@ -1,0 +1,180 @@
+
+Business Analytics
+
+
+
+PROJECT REPORT
+
+ON
+
+FORECASTING CRUDE OIL PRICES
+
+
+
+
+
+
+
+
+Submitted By: Group 5
+Amit Bhatia (13PGDM129)
+Ashish Jain (13PGDM135)
+Khushboo Garg (13PGDM146)
+Radhika Sharma (13PGDM106) 
+Shikha Agarwal (13PGDM171)
+Sukhpreet Singh (13PGDM181)
+YogeshSikri (13PGDM189) 
+Contents
+Objective	1
+Data & Methodology	2
+Data Pattern Analysis	3
+Graphical Method	3
+Correlogram	3
+Duckey Fuller Test	4
+Trend Differencing of Crude	5
+Seasonality Differencing of Crude	6
+Developing ARIMA model	8
+Dynamic Forecasting	11
+Recommendations/Business Implications	12
+Limitations	13
+
+
+
+
+
+
+
+
+
+
+
+Objective
+To forecast the prices of Brent Crude for the month of December by deploying various analytical tools and techniques
+Data & Methodology
+Steps followed in forecasting of Brent Crude prices are as follows:
+1.	Data Collection
+We have collected the daily data for price Brent crude from 1st January, 2014 to 30th November, 2014. The data has been obtained by secondary research from various sources.
+Link: http://www.investing.com/commodities/
+
+2.	Data Pattern Analysis
+Historical daily data of Brent Crude prices is analysed to determine whether the data is stationary or not. If the series is not stationary, then further analysis is done to determine the seasonality and trend in it. Data Pattern analysis is done using :
+	Graphical Method
+	Correlogram
+	Augmented Duckey Fuller Test
+
+3.	Model Building and evaluation
+Model is selected based on analysing the data. As Brent Crude price data has both seasonality and trend component in it, therefore Regression and ARIMA Technique are used.
+
+4.	Model Extrapolation 
+Actual forecast of Brent Crude price is done for next 1 month based on two models used.
+
+
+
+5.	Model Evaluation
+The models are evaluated based on the mean absolute percentage error of the data forecasts.
+Data Pattern Analysis
+Graphical Method
+As can be seen from the graph, the mean and the variance is changing with the time period, therefore it can be inferred that the data is non-stationary.	
+ 
+
+Correlogram
+From the correlogram shown below, it can be observed that observations are highly significant. Also, the decay is very slowly which means that the series is non-stationary and has either a
+i.	Trend Component
+ii.	Seasonality Component
+ 
+Duckey Fuller Test
+Null Hypothesis: Crude Prices are non-stationary
+Alternate Hypothesis: Crude Prices are stationary
+ 
+The probability of Augmented Dickey-Fuller test statistic is 0.9998 which is greater than 0.05 considering 5% significance level, therefore, the null hypothesis is accepted which means that crude prices are non-stationary in nature.
+Trend Differencing of Crude
+Method 1: Augmented Duckey Fuller Test for checking 
+Hypothesis
+H0: First difference of crude is non stationary.
+H1: First difference of crude is not non stationary.
+
+ 
+From the above data it can be observed that P-Value is 0.0000, which is less than 0.05.
+Therefore, Null hypothesis is rejected and we can conclude that series is stationary.
+
+Method 2: Correlogram for checking stationarity in first difference data
+The non stationarity is removed but it is difficult to identify the model with this correlogram, therefore seasonal differencing will make more sense.
+ 
+Seasonality Differencing of Crude
+Method 1: Augmented Duckey Fuller Test for checking 
+Hypothesis
+H0: First difference of crude is non stationary.
+H1: First difference of crude is not non stationary.
+
+ 
+From the above data it can be observed that P-Value is 0.0082, which is less than 0.05.
+Therefore, Null hypothesis is rejected and we can conclude that series is stationary.
+Method 2: Correlogram for checking stationarity in first difference data
+The non stationarity is removed.
+ 
+Developing ARIMA model
+PACF suggests that the models can be:-
+
+i.	ARIMA(1,0,1) and SARIMA(5,5,5)
+As p values of SAR(5) , MA(1) are 0.2706 and 01331 respectively, it means that these variables are insignificant. Therefore it is not a good model.
+ 
+
+ii.	ARIMA(1,0,0) and SARIMA(5,5,0)
+ 
+Inferences:-
+-	|CoffecientsEstimtes|<1, so stationarity and invertibility is satisfied.
+-	As p values of AR(1) , SAR(5) are 0.000 and 0.000 respectively, it means that these variables are significant
+-	Adjusted R-square = .6755 which is greater than 40%. The model can be considered as good for forecasting
+-	DW stat- 2, there is not a problem of autocorrelation
+-	Centered VIF is small, there is no multicollinearity
+
+ 
+
+-	AIC=3.35 and SSR=373
+-	Estimated Equation:
+
+Z(t) = -0.906 +0.888 * AR(1) – 0.45 * SAR(5)
+ 
+
+
+ 
+
+Mean absolute percentage error 0.7790 seems to be low.
+
+ 
+MAPE for November month=1.711
+Dynamic Forecasting
+Date	Actual	Predicted by ARIMA	MAPE
+29-Dec-14	59.8400	58.7499	0.0186
+28-Dec-14	59.8400	59.2890	0.0093
+26-Dec-14	59.4500	59.8950	0.0074
+24-Dec-14	60.2400	59.8512	0.0065
+23-Dec-14	61.6900	60.3841	0.0216
+22-Dec-14	60.1100	62.3506	0.0359
+21-Dec-14	61.5500	60.9587	0.0097
+19-Dec-14	61.3800	60.9934	0.0063
+18-Dec-14	59.2700	61.6246	0.0382
+17-Dec-14	61.1800	63.7644	0.0405
+16-Dec-14	60.0100	62.4717	0.0394
+15-Dec-14	61.2100	62.0278	0.0132
+14-Dec-14	61.0800	62.5891	0.0241
+12-Dec-14	62.1500	65.0830	0.0451
+11-Dec-14	63.9900	63.7645	0.0035
+10-Dec-14	64.5600	63.3350	0.0193
+9-Dec-14	67.2200	64.1643	0.0476
+8-Dec-14	66.6400	65.1526	0.0228
+7-Dec-14	67.9700	67.8640	0.0016
+5-Dec-14	69.0700	66.8909	0.0326
+4-Dec-14	69.6400	67.5721	0.0306
+3-Dec-14	69.9200	68.1268	0.0263
+2-Dec-14	70.5400	69.6654	0.0126
+1-Dec-14	72.5400	68.4854	0.0592
+		average	0.0238
+
+Recommendations/Business Implications
+•	As the crude prices are forecasted to go down further, Consumer price Inflation (CPI) is also expected to go down in future.
+•	As a trading commodity, we recommend the investors to go short on crude oil futures.
+
+Limitations	
+•	The data that we have used is limited to one year historical data, hence the results might have been different by taking more than one year data
+•	Due to paucity of time, we couldn’t use other techniques or analytical models to predict crude oil prices
