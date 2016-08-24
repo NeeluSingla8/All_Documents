@@ -1,0 +1,315 @@
+
+ BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+
+ Department of CSE, MSRIT, Bangalore Page 1 
+
+ Chapter 1
+INTRODUCTION
+1.1General Introduction
+Ad-hoc networks can be classified in three categories based on applications; Mobile Ad-hoc Networks (MANETs), Wireless Mesh Networks (WMNs), Wireless Sensor Networks (WSN). A mobile ad hoc network (MANET) can be defined as an autonomous system of mobile nodes. A network is decentralized and the network organization and message delivery are executed by mobile nodes. The routing functionality is furthermore integrated into the mobile nodes. The design issue of network protocols for MANET environment is highly complex. These networks need efficient distributed algorithms which are used to determine the connectivity of network organizations, link scheduling, and routing. The efficiency of routing algorithms in networks depends on the route computation. The shortest path based on network metrics from a source to a destination is usually the optimal route in static networks, this idea is not easily extended to MANETs. Many factors: extended power, quality of wireless links, path losses, fading, interference, and topological changes have to be considered in order to determine a new route. The networks should adaptively change routing paths to improve any of these effects[20][37]. 
+Mobile ad hoc networking technologies have increasingly been applied to civilian applications, since the advent of wireless communication the requirements of providing better service in Mobile Ad Hoc Network (MANET) is growing exponentially. In areas in which there is very little or no communication infrastructure or the existing infrastructure is expensive or inconvenient to use, wireless mobile users will still be able to communicate through the formation of a MANET.[1]
+As for other packet data networks, one –to-one communication in a MANET is achieved by unicast routing each single packet. Routing in MANET is challenging due to the constraints existing on the transmission bandwidth battery power and CPU time and the requirement to cope with the frequent topological changes resulting from the mobility of the nodes. Nodes of a MANET co-operate in the task of routing packets to destination nodes since each node of the network is able to BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 2 
+
+communicate only with those nodes located within its transmission radius R,while the source and destination nodes can be located at a distance much higher than R[39].
+The design space of ad-hoc routing protocols can be divided into three broad categories Proactive, Reactive and Hybrid routing protocols. Proactive protocols continuously learn the topology ofthe network by exchanging topological information among the network nodes. The reactive routing protocols are based on some sort of query-reply dialog. Reactive protocols proceed for establishing route(s) to the destination only when the need arises. Often reactive or proactive feature of a particular routing protocol might not be enough; instead a mixture might yield better solution, known as Hybrid protocols[12][1].
+1.2 Problem Statement
+The project is aimed at making the routing efficient by creating nodes with intelligent behaviour which enables them to understand the changes in the environment and select between the protocols accordingly.
+1.3 Objectives of Study
+The objectives of the study are as follows:
+• Obtain an understanding of MANETs and the algorithms that facilitate efficient routing in MANETs.
+• To create nodes with intelligent behaviour which enables them to sense the environment and select the suitable protocols accordingly.
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 3 
+
+1.4 Current Scope
+Many frameworks currently exist for externally switching between protocols in MANETs. For instance Abstract Syntax Layer (ASL) framework. But the limitation is that they do not address the run time reconfiguration issue. Many other generic frameworks (The System CF and NeighbourDetection CF) exist but they are resource hungry and they do not support concurrency.[11]
+1.5 Future Scope
+This project aims at making the routing efficient by intelligently selecting  between AODV and DSDV protocols as demanded by the current network environment. The cost metrics are node density, and pause time and the performance metrics are throughput, convergence time ,normalised routing load and packet delivery ratio. The main idea of this project is to make nodes intelligent enough to select between the routing protocols which best suits the particular situation. The idea can be extended to various other protocols and different cost and performance metrics.[7]BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 4 
+
+Chapter 2 
+LITERATURE SURVEY
+Literature survey includes review of the published and unpublishedwork from secondary sources of data in the areas of  adhoc networks , issues related with these networks , routing protocols and the tools used for simulation of these adhoc networks[1][11].
+2.1 Introduction
+2.1.1 Computer Networks
+A computer network is a telecommunications network that allows computers to exchange data. The physical connection between nodes can be either wired or wireless media . 
+Computer network devices that originate , route and terminate the data are called network nodes.Nodes can beservers , personal computers and even simpler hardware devices such as hubs switches and routers.Two devices are said to be networked when a process in one device is able to exchange information with a process in the other device.[1]
+2.1.2 Wireless Networking and its types 
+Wireless network is a type of computer network that uses wireless( mostly but not always radio waves ) for network connections.
+This method is implemented to avoid costly process of introducingcables into a building , or as a connection between various equipment locations . These are usually implemented at the physical level of OSI model and administrated using radio communications . There are various types of wireless networks present which include 
+• Wireless personal area networks (WPAN) interconnect devices within a relatively small area,generally within a persons'reach.
+• Wireless local area network (WLAN) links two or more devices within a short distance using wireless distribution method , by providing connection through internet access.
+• A wireless mesh network is a wireless network made up of radio nodes organized in a mesh topology. Each node forwards messages on behalf of the other nodes. 
+• Wireless metropolitan area networks (WMAN)  are a type of wireless network that connects several wireless LANs.
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 5 
+
+
+• Wireless wide areanetworks (WWAN) are wireless networks that typically cover large areas, such as between neighbouring towns and cities, or city and suburb.A typical system contains base station gateways, access points and wireless bridging relays.
+• A cellular networkis a radio network distributed over land areas called cells, each served by at least one fixed-location transceiver, known as a cell site or  base station. In a cellular network, each cell characteristically uses a different set of radio frequencies from all their immediate neighbouring cells to avoid any interference.
+• An adhoc networking whose primary goal was to set up communications for specialized, customized, extemporaneous applications in areas where there is no pre-existing infrastructure (e.g., jungle) or where the infrastructure has failed (e.g., earthquake rescue), or it is not adequate for the current needs (e.g., interconnection of low energy environmental sensors) . 
+
+2.1.3 Mobile Ad HocNetworks (MANETs)
+A mobile ad hoc network (MANETs) is a mobile wireless network composed of several mobile nodes, likely to communicate among themselves without the intervention of any centralized management or existing infrastructure. Hence, these mobilenodes must necessarily be able to cooperate to allow communication between themselves. Their main asset resides in the fact that they are not tributary to fixed installations .
+Ad hoc wireless networks, find applications in several areas. Some of these include: military applications, collaborative and distributed computing, emergency operations, wireless mesh networks, wireless sensor network, and hybrid wireless network architectures [1].
+2.1.4 Ad Hoc Networks Characteristics
+• Mobility:the fact that nodes can be rapidly repositioned and/or move is the raison d’etre of ad hoc networks. Rapid deployment in areas with no infrastructure often implies that the users must explore an area and perhaps form teams/swarms that in turn coordinate among themselves tocreate a task force or a mission. We can have individual random mobility, group mobility, motion along pre-planned routes, etc. The mobility model can have major impact on the selection of a routing scheme and can thus influence performance .
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 6 
+
+
+• Multi-hopping:a multi-hop network is a network where the path from source to destination traverses several other nodes. Ad hoc nets often exhibit multiple hops for obstacle negotiation, spectrum reuse, and energy conservation. Battle-field covert operations also favour a sequence of short hops to reduce detection by the enemy .
+• Self-Organization:the ad hoc network must autonomously determine its own configuration parameters including: addressing, routing, clustering, position identification, power control, etc. In some cases, special nodes can coordinate their motion and dynamically distribute in the geographic area to provide coverage of disconnected islands.
+• Energy Conservation: most ad hoc nodes (e.g., laptops, PDAs, sensors, etc.) have limited power supply and no capability to generate their own power. Energy efficient protocol design is critical for longevity of the mission.
+• Scalability: in some applications the ad hoc network can grow to several thousand nodes. For wireless “infrastructure” network’s scalability is simply handled by a hierarchical construction. 
+• Security: the challenges of wireless security are well known –ability of the intruders to eavesdrop and jam/spoof channel. A lot of work done in general wireless infrastructure network extends to ad hoc domain. The ad hoc networks, however, are even more vulnerable to attacks than the infrastructure counterparts. Both active and passive attacks are possible. An active attacker tends to disrupt operations. Passive attacks are unique of ad hoc nets, and can be even more insidious than the active ones.[13]
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 7 
+
+2.2 Background
+2.2.1 Open Issues inMANETs
+Mobile Ad-hoc Network ishighly dynamic in nature and no fixed infrastructure in these type of network. Due to this, issues in designing Mobile Ad-hoc Networks are explain as 
+• Error-prone channel state:The characteristics of the links in a wireless network typically vary, and this calls for an interaction between the routing protocol, if necessary, find alternate routes.
+• Hidden problem:If two nodes which are not in same range try to communicate simultaneously with a third node which in range with both of them , this creates collision at thethird node which in turn will enable the third node to receive the data. To avoid this it is needed to capture the channel by notifying other nodes about an upcoming transmission. This is done by stimulating the receiving node to output a short frame so that nearby nodes can detect that a transmission is going to take place.
+• Bandwidth-constrained, variable capacity links:Wireless links will continue to have significantly lower capacity than their hardwired counterparts. In addition, the realized throughput of wireless communications--after accounting for the effects of multiple access, fading, noise, and interference conditions etc. is often much less than a radio's maximum transmission rate.  
+• Energy-constrained operation: For the nodes in MANETs,the important system design criteria for optimization may be energy conservation. It should be noted that the energy consumed during sending a packet is the largest source of energy consumption of all nodes. This is followed by the energy consumption during receiving a packet.
+
+After many studies and experiments doneit is observed that all these issues can be taken care by making the routing of the nodes in MANETs efficient.
+2.2.2 Routingin MANETs
+A routing protocol is the mechanism by which user traffic is directed and transported through the network from a source node to a destination node. Conventional routing protocols for wired networks cannot be employed in an Ad hoc network environment by the virtue of the factors BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 8 
+
+enumerated. This fact has motivated the design of Ad hoc-specific routing protocols.
+2.2.3 Classification of Routing Protocols for MANET
+MANET routing protocols could be broadly classified into three major categories based on the routing information update mechanism:
+• Proactive Routing Protocols:Proactive protocols continuously learn the topology of the network by exchanging topological information among the network nodes. Thus, when there is a need for a route to a destination, such route information is available immediately. If the network topology changes too frequently, the cost of maintaining the network might be very high. If the network activity is low,the information about actual topology might even not be used.
+• Reactive Routing Protocols:The reactive routing protocols are based on some sort of query-reply dialog. Reactive protocols proceed for establishing route(s) to the destination only when the need arises. They do not need periodic transmission of topological information of the network.
+• Hybrid Routing Protocols:Often reactive or proactive feature of a particular routing protocol might not be enough; instead a mixture might yield better solution. Hence, in the recent days, several hybrid protocols are also proposed.
+
+Based on the network structure they are classified as 
+• Flat Routing protocols:All nodes participating in routing play the same role of collecting data and communicating with the sink. Example: Sensor Protocols for Information via Negotiation (SPIN).
+• Hierarchicalrouting protocols:The goal of the protocol is to perform energy-efficient routing in WSNs by avoiding an overload of sink nodes by too many received messages, as well as reducing the amount of overall message transmissions. To achieve this, nodes are grouped into clusters, where the higher energy nodes are used to process and send the information while low energy nodes are used to perform the sensing in the proximity of the target. Example: Low energy adaptive clustering hierarchy (LEACH). 
+• Location-based routing protocols:Sensor nodes are addressed by means of their locations. 
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 9 
+
+
+In most cases location information is needed in order to calculate the distance between two particular nodes so that energy consumption can be estimated. Each node calculates the distance to his neighbour node from the incoming signal strength. In some location-based schemes in order to save energy, the nodes must change their state from active to sleep if there is no activity.
+
+Based on the network operations routing protocols are classified as 
+• Multipath routing protocol:Several paths are discovered between the source and the destination and are used to provide a backup route. When the primary path fails, the backup is used and this increases the network performance at the expense of increasing the cost of energy consumption and traffic generation. Example: Ad hoc On-demand Multipath Distance Vector routing (AOMDV).
+• Query based routing protocols:Destination node sends queries requesting certain data from the nodes in the network. If a node has the data that match the query, it sends them back to the requested node. This process is known as Directed Diffusion. Examples: Directed Diffusion (DD), COUGAR, Sensor Protocols for Information via Negotiation (SPIN).
+• Negotiation based routing protocols:The main idea is to suppress duplicate information and prevent redundant data from being sent to the next sensor or the base station by conducting a series of negotiation messages before the real data transmission begins. Examples: SPIN family protocols.
+• QoS based routingprotocols:The network has to balance between energy consumption and data quality. In particular, the network has to satisfy certain QoS metrics (delay, energy, bandwidth, etc.) when delivering data to the base station. Example: SPEED (Stateless Protocol for Real-Time Communication in Sensor Networks).
+• Coherent based routingprotocols:All the nodes within the network collect the data and perform minimum processing (time stamping or duplicate suppression). Then the data is forwarded to nodes that perform further processing on the data. These nodes are called aggregators.
+
+Based on communication initiators 
+• Source initiated routing protocols:The nodes send data to the base station soon after they 
+BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 10 
+
+
+take new measurements. Source initiated protocols use either time driven or event driven data reporting.
+• Destination initiated routing protocols:The nodes only send data in response to a request for data. Destination initiated protocols use query driven data reporting. The drawback of destination initiated protocols is the fact that requests are usually flooded through the 
+
+network, draining the energy sources of nodes.[1]
+Figure 2.1 Types ofrouting protocols
+2.2.4 Proactive protocols (Table-driven protocols)
+A. Dynamic Destination-Sequenced Distance-Vector Routing Protocol (DSDV)
+DSDV is developed on the basis of Bellman–Ford routing algorithm with some modifications. In this routing protocol, each mobile node in the network keeps a routing table. Each of the routing table contains the list of all available destinations and the number of hops to each. Each table entry is tagged with a sequence number, which is originated by the destination node. Periodic transmissions of updates of the routing tables help maintaining the topology information of the network. If there is any new significant change for the routing information, the updates are BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 11 
+
+transmitted immediately. DSDV protocol requires each mobile node in the network to advertise its own routing table to its current neighbours. The advertisement is done either by broadcasting or by multicasting. By the advertisements, the neighbouring nodes can know about any change that has occurred in the network due to the movements of nodes. The routing updates could be sent in two ways: one is called a ‘‘full dump’’ and another is ‘‘incremental.’’ In case of full dump, the entire routing table is sent to the neighbours, whereasin case of incremental update, only the entries that require changes are sent.[12]
+B. Wireless Routing Protocol (WRP)
+WRP belongs to the general class of path-finding algorithms, defined as the set of distributed shortest path algorithms that calculate the paths using information regarding the length and second-to-last hop of the shortest path to each destination. WRP reduces the number of cases in which a temporary routing loop can occur. For the purpose of routing, eachnode maintains four things: 1.A distance table 2. A routing table 3.A link-cost table 4. A message retransmission list (MRL). WRP uses periodic update message transmissions to the neighbours of a node. The nodes in the response list of update message (which is formed using MRL) should send acknowledgments. If there is no change from the last update, the nodes in the response list should send an idle Hello message to ensure connectivity. A node can decide whether to update its routing table after receiving an update message from a neighbourand always it looks for a better path using the new information. If a node gets a better path, it relays back that information to the original nodes so that they can update their tables. After receiving the acknowledgment, the original node updates its MRL.[12][20]
+C. Cluster Gateway Switch Routing Protocol (CGSR)
+CGSR considersa clustered mobile wireless network instead of a ‘‘flat’’ network. For structuring the network into separate but interrelated groups, cluster heads are elected using a cluster head selection algorithm. By forming several clusters, this protocol achieves a distributed processing mechanism in the network. However, one drawback of this protocol is that, frequent change or selection of cluster heads might be resource hungry and it might affect the routing performance. CGSR uses DSDV protocol as the underlying routing scheme and, hence, it has the same overhead as DSDV. However, it modifies DSDV by using a hierarchical cluster-head-to-gateway routing approach to route traffic from source to destination. Gateway nodes are nodes that BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 12 
+
+are within the communication ranges of two or more cluster heads. A packet sent by a node is first sent to its cluster head, and then the packet is sent from the cluster head to a gateway to another cluster head, and so on until the cluster head of the destination node is reached. The packet is then transmitted to the destination from its own cluster head [12].
+D. Global State Routing (GSR)
+In GSR protocol nodes exchange vectors of link states among their neighboursduring routing information exchange. Based on the link state vectors, nodes maintain a global knowledge of the network topology and optimize their routing decisions locally. Functionally, this protocol is similar to DSDV, but it improves DSDV in the sense that it avoids flooding of routing messages [12][20].
+E. Fisheye State Routing (FSR)
+FSR isbuilt on top of GSR. The novelty of FSR is that it uses a special structure of the network called the ‘‘fisheye.’’ This protocol reduces the amount of traffic for transmitting the update messages. The basic idea is that each update message does not contain information about all nodes. Instead, it contains update information about the nearer nodes more frequently than that of the farther nodes. Hence, each node can have accurate and exactinformation about its own neighbouringnodes.
+F. Hierarchical State Routing (HSR)
+HSR combines dynamic, distributed multilevel hierarchical clustering technique with an efficient location management scheme. This protocol partitions the network into several clusters where each elected cluster head at the lower level in the hierarchy becomes member of the next higher level. The basic idea of HSR is that each cluster head summarizes its own cluster information and passes it to the neighbouring cluster heads using gateways. After running the algorithm at any level, any node can flood the obtained information to its lower level nodes. The hierarchical structure used in this protocol is efficient enough to deliver data successfully to any part of the network.
+G. Zone-Based Hierarchical Link State Routing Protocol (ZHLS)
+In ZHLS protocol , the network is divided into non-overlapping zones as in cellular networks. Each node knows the node connectivity within its own zone and the zone connectivity BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 13 
+
+information of the entire network. The link state routing is performed by employing two levels: node level and global zone level. ZHLS does not have any cluster head in the network like other hierarchical routing protocols. The zone level topological information is distributed to all nodes. Since only zone ID and node ID of a destination are needed for routing, the route from a source to a destination is adaptable to changing topology. The zone ID of the destination is found by sending one location request to every zone.
+2.2.5 Reactive Routing Protocols (On-demand protocols)
+A. Dynamic Source Routing (DSR)
+DSR allowsnodes in the MANET to dynamically discover a source route across multiple network hops to any destination. In this protocol, the mobile nodes are required to maintain route caches or the known routes. The route cache is updated when any new route is known for a particular entry in the route cache. Routing in DSR is done using two phases: route discovery and route maintenance. When a source node wants to send a packet to a destination, it first consults its route cache to determine whether it already knows about any route to the destination or not. If already there is an entry for that destination, the source uses that to send the packet. If not, it initiates a route request broadcast. This request includes the destination address, source address, and a unique identification number. Each intermediate node checks whether it knows about the destination or not. If the intermediate node does not know about the destination, it again forwards the packet and eventually this reaches the destination. A node processes the route request packet only if it has not previously processed the packet and its address is not present in the route record of the packet. A route reply is generated by the destination or by any of the intermediate nodes when it knows about how to reach the destination [24].
+B. Ad Hoc On-Demand Distance Vector Routing (AODV)
+AODV isbasically an improvement of DSDV. But, AODV is a reactive routing protocol instead of proactive. It minimizes the number of broadcasts by creating routes based on demand, which is not the case for DSDV. When any source node wants to send a packet to a destination, it broadcasts a route request (RREQ) packet. The neighbouring nodes in turn broadcast the packet to their neighbours and the process continues until the packet reaches the destination. During the process of forwarding the route request, intermediate nodes record the address of the neighbourfrom which the first copy of thebroadcast packet is received. This record is stored in their route BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 14 
+
+tables, which helps for establishing a reverse path. If additional copies of the same RREQ are later received, these packets are discarded. The reply is sent using the reverse path. For route maintenance, when a source node moves, it can reinitiate a route discovery process. If any intermediate node moves within a particular route, the neighbourof the drifted node can detect the link failure and sends a link failure notification to its upstream neighbour. This process continues until the failure notification reaches the source node. Based on the received information, the source might decide to re-initiate the route discovery phase [24].[1]
+C. Signal Stability–Based Adaptive Routing Protocol (SSA)
+SSA protocol focuses on obtaining the most stable routes through an ad hoc network. The protocol performs on demand route discovery based on signal strength and location stability based on the signal strength, SSA detects weak and strong channels in the network. SSA can be divided into two cooperative protocols: the Dynamic Routing Protocol (DRP) and the Static Routing Protocol (SRP). DRP uses two tables: Signal Stability Table (SST) and Routing Table (RT). SST stores the signal strengths of the neighbouring nodes obtained by periodic beacons from the link layer of each neighbouring node. These signal strengths are recorded as weak or strong. DRP receives all the transmissions and, after processing, it passes those to the SRP. SRP passes the packet to the node’s upper layer stack if it is the destination. Otherwise, it looks for the destination in routing table and forwards the packet. If there is no entry in the routing table for that destination, it initiates the route-finding process. Route-requestpackets are forwarded to the neighbours using the strong channels. The destination, after getting the request, chooses the first arriving request packet and sends back the reply. The DRP reverses the selected route and sends a route-reply message back to the initiator of route request. The DRPs of the nodes along the path update their routing tables accordingly. In case of a link failure, the intermediate nodes send an error message to the source indicating which channel has failed. The source in turn sends an erase message to inform all nodes about the broken link and initiates a new route-search process to find a new path to the destination [26].
+D. Temporarily Ordered Routing Algorithm (TORA)
+TORA is a reactive routing protocol with some proactive enhancements where a link between nodes is established creating a Directed Acyclic Graph (DAG) of the route from the source node to the destination. This protocol uses a ‘‘link reversal’’ model in route discovery. A route BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 15 
+
+discovery query is broadcasted and propagated throughout the network until it reaches the destination or a node that has information about how to reach the destination. TORA defines a parameter, termed height. Height is a measure of the distance of the responding node’s distance upto the required destination node. In the route discovery phase, this parameter is returned to the querying node. As the query response propagates back, each intermediate node updates its TORA table with the route and height to the destination node. The source node thenuses the height to select the best route toward the destination. This protocol has an interesting property that it frequently chooses the most convenient route, rather than the shortest route. For all these attempts, TORA tries to minimize the routing management traffic overhead.[26]
+E. Associativity-Based Routing (ABR)
+ABR protocol defines a new type of routing metric “degree of association stability” for mobile ad hoc networks. In this routing protocol, a route is selected based on the degree of association stability of mobile nodes. Each node periodically generates beacon to announce its existence. Upon receiving the beacon message, a neighbournode updates its own associativity table. For each beacon received, the associativity tick of the receiving node with the beaconing node is increased. A high value of associativity tick for any particular beaconing node means that the node is relatively static. Associativity tick is reset when any neighbouring node moves out of the neighbourhood of any other node.[26]
+F. Cluster-Based Routing Protocol (CBRP)
+CBRP isan on-demand routing protocol, where the nodes are divided into clusters. When a node comes up in the network, it has the undecided state. The first task of this node is to start a timer and to broadcast a HELLO message. When a cluster-head receives this HELLO message, it replies immediately with a triggered HELLO message. After that, when the node receives this answer, it changes its state into the member state. But when the node gets no message from any cluster-head, it makes itself as a cluster-head, but only when it has bidirectional link to one or more neighbournodes. Each node has a neighbourtable. A cluster head keeps information about all of its members in the same cluster. It also has a cluster adjacency table, which provides information about the neighbouring cluster[26][1].BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 16 
+
+2.2.6 Proactive versus Reactive Routing Protocols
+Proactive approaches introduce more overhead compared to reactive ones.This is because even when there are no changesin network topology, control messages are flooded in order to maintain a full knowledge of the network in each node. In proactive routing protocols first packet latency is less when compared with on-demand protocols. Table-driven protocols are inherently more energy-consumed compared to on-demand ones, most of the proposals involve modifications to reactive protocols [24][26]. 
+2.2.7 Switching between theprotocols
+Networking properties such as total order or recovery from message loss can be realized bymany different protocols. These protocols offer the same functionality but are optimized for different environments or applications. Hybridprotocols can be used to combine the advantages of various protocols, but designing them correctly is difficult. The ENSEMBLE system provides a mechanism for switching between different protocols at run-time.  However, it was not clear how to guarantee that the result was actually correct,i.e. under what circumstances a switch would actually preserve the properties ofthe individual protocols. A new approach to switching is to design a generic switching protocol that would serve as a wrapper for a set of protocols with the same functionality.  The advantages that are obtained using such techniques includethe following: 
+• Performance-By using the best protocol for a particular network and application behaviour, performance can always be optimal.
+• On-line Upgrading-Protocol switching can be used to upgrade network protocols or fix minor bugs at run-time without having to restart applications.
+• Security-System managers will be able to increase security at run-time, for example when an intrusion detection system notices unusual behaviour.[10]
+
+2.2.8 Concept of embedding intelligence in MANETs
+A standard sensor nodes in the MANETs are intelligent enough to sense its surrounding environment and behave accordingly. But using of sensor nodes consumes high power thus reducing the network lifetime . Also to implement the intelligent functionalities in the network with sensor nodes requires more memory space. BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 17 
+
+Obtaining the advantages of making the network intelligent by avoiding such drawbacks is the most challenging task . One way to achieve this is by maing the network with wireless mobile nodes intelligent . Many researches have been made on making the network intelligent by using techniques like swarm intelligence. Using this techinique many new algorithms are developed to make the routing efficient in MANETs . Further many proposals are made to modify the exsisting protocols to improve the performance by embedding intelligence in the network . Instead,to reduce the overhead of modifying the whole network its is advisable to modify the computers ( switches,hubs,routers,nodes etc.) residing with in the network . 
+2.2.9Simulation Environment 
+Simulation is done using NS2,version 2.35 which is the current version. The NS-2 is a discrete event driven simulator. The goal of ns2 is to support networking research and education. It is suitable for designing new protocols, comparing different protocols and traffic evaluations .In 1996-97, work on ns version 2 (ns-2) was initiated based on a refactoring by Steve McCanne.Use of Tcl was replaced by MIT's (otcl) an object-oriented dialect of Tcl. The core of ns-2 is also written in C++, but the C++ simulation objects are linked to shadow objects in OTcl and variables can be linked between both language realms. Simulation scripts are written in the OTcl language, an extension of the Tcl scripting language.Presently, ns-2 consists of over 300,000 lines of source code, and there is probably a comparable amount of contributed code that is not integrated directly into the main distribution. It runs onGNUlinux,freeBSD,Solaris, Mac OS and Windows 95/98/NT/2000/XP. It is licensed for use under version 2 of the GNU general public licence[14][21][25].
+2.2.9.1Energy Model
+NS2 uses the wireless interface which works like the 914MHZ Lucent WaveLAN DSSS radio interface . Nodes use Omni-directional antenna, and the transmission rangeis 250 meters[14].
+2.2.9.2 Fixed Transmission and Receiving Power 
+Energy consumption only counts receiving and transmission. Thus, idle nodes do not consume energy. The power for transmission and receiving are fixed values, X Watt and Y Watt, BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 18 
+
+respectively. Assume a packet p with time length t(p); when a node transmits p, its energy capacity will be decreased by Etx (p), where Etx (p)= X × t(p); when  a node receives p, its energy capacity will be decreased by Erx(p), where Erx(p) = Y × t(p). Thus, under this model, MTPR is the same as the minimum hop routing.
+2.2.9.3 Simulation of user mobility
+From the simulation of the user mobility we obtain Mobility metrics or statistics for the mobility modeland performance of routing protocols under the mobilitymodel.
+figure 2.2:Simulation of user mobility
+2.3 NS2
+2.3.1 Structure of NS2.35
+Ns uses two languages C++ to implement protocols and Object Oriented Tcl (OTcl) to write simulation scripts. Ns is an OTcl script interpreter that has a simulation event scheduler and network libraries. So we write an Otcl script, which initiates an event scheduler. In the script we define the topology of the network using objects and functions from the libraries.
+Traffic is added to the network and told when to commence and when to end. This is handled by the event scheduler, as is the termination of the simulation. The results from the interpreter can then be analysed or graphically displayed using nam. Without getting to complicated data path BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 19 
+
+implementations are written and compiled by C++ in order to save processing time.
+Once compiled these objects become available to the OTcl interpreter via an OTcl linkage. The linkage creates a matching OTcl object and makes available to it functions and variables that are also available to the linked C++ object. A class hierarchy in C++ (also called the compiled hierarchy), and a similar class hierarchy within the OTcl interpreter (also called the interpreted hierarchy) are also maintained between the linkage.If we look at the structure of Ns we develop and execute in Tcl using object libraries contained in OTcl. The event scheduler and most network components are developed in C++ to give us the Ns simulation. The Tclcl is the Tcl/C++ interface between OTcl and C++.
+In order to enhance the functionality of Ns extensions are added. These extensions are modifications to the C++ or OTcl source code. Alternatively these may be completely new agents or traffic sources etc. As an example the event scheduler and network component object classes are located in the Ns-2 directory. In the Ns-2 directory are UDP.h and UDP.cc, which are the C++ files used to implement the UDP agent (this location may vary with different versions of Ns). 
+Similarly the tcl/lib directory contains the OTcl source code for node, links etc. To patch Ns to work with a new or modified agent means the creation of C++ code, which will involve the creation of a class and possibly a header file. A linkage has to be set up within the C++ class to ensure the OTcl can use instances of the C++ class. Dependent on what is being written, a header file may have to be registered in the packet.h and ns-packet.tcl. 
+Methods may have to be added to existing classes. Once these modifications are made the makefile will have to be modified to add yourclass.o to the object file list. Then run make clean and make depend before recompiling using make. This will patch the system to use your new or modified class[25].
+Table 3.1:Structure of ns2
+Event 
+scheduler                                 ns2 
+tclcl                                      n/w
+otcl                                       connector
+tcl8.0BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 20 
+
+2.3.2 Components of NS2.35
+• NS –Simulator
+• NAM –Network Animator -visual demonstration of NS output
+• Pre-processing-Handwritten TCL or Topology generator
+• Post analysis -Trace analysis using Perl/TCL/AWK/MATLAB
+
+Simple example of Tcl script:
+#Create a simulator object
+set ns [new Simulator]
+#Open the nam trace file
+set nf [open out.nam w]
+$ns namtrace-all $nf
+#Define a 'finish' procedure
+proc finish {} {
+global ns nf
+$ns flush-trace
+#Close the trace file
+close $nf
+#Execute nam on the trace file
+exec nam –a out.nam&
+exit 0
+}
+#Create two nodes
+set n0 [$ns node]
+set n1 [$ns node]
+#Create a duplex link betweenthe nodes
+$ns duplex-link $n0 $n1 1Mb 10ms DropTail
+#Call the finish procedure after 5 seconds of simulation time
+$ns at 5.0 "finish"
+#Run the simulation
+$ns run
+This script creates two nodes. And the trace file is created called out.nam this file is can be BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 21 
+
+executed to visualize using NAM editor. We can also attach the agent to the node and create traffic in the nodes[9].
+2.3.2.1 NAM (Network Animator)
+NAM is a Tcl/TK based animation tool for viewing network simulation traces and real world packet traces. It supports topology layout, packet level animation, and various data inspection tools. NAM began at LBL. It has evolved substantially over the past few years. The NAM development effort was on on-going collaboration with the VINT project. Figure 2.3 shows an example visualization of the simulation.
+2.3.2.2 Perl
+Perl is a high-level, general-purpose, interpreted, dynamic programming language. Perl was originally developed by Larry Wall, a linguist working as a systems administrator for NASA, in 1987, as a general purpose Unix scripting language to make report processing easier.  Since then, it has undergone many changes and revisions and become widely popular among programmers. Larry Wall continues to oversee development of the core language, and itsupcoming version, Perl 6.
+Perl borrows features from other programming languages including C, shell scripting (sh), AWK, and sed. The language provides powerful text processing facilities without the arbitrary data length limits of many contemporary Unix tools, facilitating easy manipulation of text files. It is also used for graphics programming, system administration, network programming, applications that require database access and CGI programming on the Web. Perl is nicknamed “the Swiss Army chainsaw of programming languages” due to its flexibility and adaptability.
+The Perl language includes a specialized syntax for writing regular expressions (RE, or regexes), and the interpreter contains an engine for matching strings to regular expressions. The regular-expression engine uses a backtracking algorithm, extending its capabilities from simple pattern matching to string capture and substitution. The regular-expression engine is derived from regex written by Henry Spencer.
+Regular-expression syntax is extremely compact, owing to history. The first regular-BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 22 
+
+expression dialects were only slightly more expressive than globs, and the syntax was designed so that an expression would resemble the text that it matches. This meant using no more than a single punctuation character or a pair of delimiting characters to express the few supported assertions. Over time, the expressiveness of regular expressions grew tremendously.[14][21]
+2.3.2.3 AWK
+The AWKutility is an interpreted programming language typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like OS.AWK uses a data-driven scripting language consisting of a set of actions to be taken against textual data (either in files or data streams) for the purpose of producing formatted reports. The language extensively uses the string data type associativity(that is, arrays indexed by key strings), and regular expressions. Although AWK and SEDwere designed to support one-liner programs, even the early Bell Labs users of AWK often wrote well-structured large AWK programs, and despite its limited intended area of use, AWK is turning complete. The power, terseness, and limits of early AWK programs inspired to write Perl just as a new, more powerful POSIX AWK and gawk (GNU AWK) were being defined.[21]
+AWKis a language for processing text files. A file is treated as a sequence of records, and by default each line is a record. Each line is broken up into a sequence of fields, so we can think of the first word in a line as the first field, the second word as the second field, and so on. An AWK program is of a sequence of pattern-action statements. AWK reads the input a line at a time. A line is scanned for each pattern in the program, and for each pattern that matches, the associated action is executed.[21]
+2.4 Related Work 
+The design space of ad-hoc routing protocols can be divided into three broad categories: 
+• Proactive (or table-driven) protocols continuouslyevaluate routes from each node to all other nodes reachable from that node. 
+• Reactive (or on-demand) protocols, on the other hand, discover routes to destinations only when there is an immediate need for it. 
+• Hybrid protocols combineaspects of both proactive and reactive types—e.g. by employing BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 23 
+
+proactive routing within scoped domains and reactive routing across domains.
+The pressures that are driving the proliferation of ad-hoc routing protocolsare coming from both ‘below’ and ‘above’. From ‘below’, the biggest determining factor in which protocol is the most appropriate is the size of the network: generally, proactive protocols are better suited to smaller networks, reactive ones to larger networks, and hybrid protocols to networks that can structured hierarchically. But where the network varies in size (e.g. grows), an initial choice of protocol (e.g. proactive) can become sub-optimal. As another example, a reactive protocol will do well where pairs of interacting source-destination nodes (i.e. an influence from ‘above’) tend to be stable, while proactive protocols are typically better where interaction patterns are more dynamic (although only where the network is not too big). In addition, peer-to-peer services running over MANETs tend to prefer proactive protocols ; and applications requiring QoS differentiation can benefit from intelligent path selection as enabled by multipath routing algorithms like TORA  or Multipath DYMO —although these carry overhead that is unnecessary for other applications (or application use-cases).[10]
+As well as proposing many new protocols in each of the above categories researchers have since investigated numerous variations on already-existing protocols. For example, path accumulation ,pre-emptive routing , multi-path routing , power-efficient routing , fish-eye routing , and numerous styles of flooding are examples of techniques that can be ‘switched on’ to improve a particular property of an underlying base protocol under certain operating conditions, but which may be counter-productive under other conditions. Flooding (which is typically used to propagate control information) is a particularly rich area in this respect. For example, Multipoint Relaying is good atreducing control overhead in denser networks, whereas Hazy-Sighted Link State  provides better performance as the network grows in diameter. Various epidemic/ gossip algorithms  can also be applied in this context. 
+We are not alone in recognizing the importance of dynamic switching between protocols in MANETs. Many frame works have been proposed in literature to support this cause.[17]BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 24 
+
+2.5Frameworks for routing protocol
+There are many software tool kits available which help in working with and studyingthe behaviour of routing protocols . The most prominent ones among them are 
+• MANETKit
+• INETMANET
+
+2.5.1MANETKit –A routing protocol framework: 
+MANETKit is an OpenCom ComponentFramework (CF) that supports the development, deployment and dynamic reconfiguration of routing protocols for ad-hoc networks. It provides the developer with an extensible set of common ad-hoc routing protocol functionality (encapsulated in components), and tools to configure and reconfigure protocol graphs implemented as nested Cfs.[14]
+The key conclusion is that no single protocol or class of protocols is well suited to more than a subset of the operating conditions to be found in any given MANET environment at any given time. Hence we rely on switching of protocols dynamically based on certain parameters. But this switching has to be done externally. This is a disadvantageas the MANETs are very dynamic in nature. So we now introduce a method of creating the nodes in the MANETs such that they can  intelligently decide on which protocol to select  that  suits  the best to the environment the nodes are present in .[14]
+2.5.2 INETMANET 
+INETMANET is based on INET Framework .The INET Framework provides a TCP/IP protocol stack for the OMNeT++ discrete event simulator. It includes support for wired and wireless networks, routing, and protocols for mobile ad-hoc networks.Generally INETMANET provides the same functionality as the INET Framework, but contains additional protocols and components that are especially useful while modelling wireless communication.BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 25 
+
+Chapter 3 
+SOFTWARE REQUIREMENT SPECIFICATION
+3.1 Introduction
+3.1.1 Purpose
+The purpose of this project is to enhance the performance of the network. This is done by enabling the nodes to intelligently select the protocol depending upon the environment .The protocol best suited will be selected. The selection is based on two important parameters which are pause time and node density. We will then evaluate the performance of IS using Convergence time, throughput, normalized routing load, packet delivery ratio and end to end delay as the performance metrics.
+3.1.2Scope of the Project
+The scope of the project includes making the nodes environmentally aware. The algorithm is based on intelligently selecting the suitable protocol which in our scope are dependent on node density and pause time. Performance is  measured by comparing the network with intelligent nodes against the network with nodes having no such intelligence . Convergence time, Throughput, normalized routing load, packet delivery ratio and end to end delay are taken as performance metrics.
+3.1.3 Definitions, Acronyms and Abbreviations
+MANETs:or Mobile Ad Hoc Networks is a type of wireless ad hoc networks, and is a self-configuring network of mobile devices connected by any number of wireless links. Every device in a MANET is also a router because it is required to forward traffic unrelated to its own use.
+DSDV: Destination sequenced distance vector routing (DSDV) is a proactive protocol and is adapted from the conventional Routing Information Protocol (RIP) to ad hoc networks routing. Each entry in the routing table contains a sequence number, the sequence numbers are generally BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 26 
+
+even if a link is present; else, an odd number is used.
+AODV:Ad-hoc On-Demand Distance Vector (AODV) is a reactive protocol: theroutes are created only when they are needed. It uses traditional routing tables, one entry per destination, and sequence numbers to determine whether routing information is up-to-date and to prevent routing loops.
+ns2:NS or the Network Simulator is a discrete event simulator targeted at networking research. NS provides substantial support for simulation of TCP, routing and multicast protocols over wired and wireless networks.
+Pause time: Nodes will stop at a point fora particular amount of time called “pause time” before moving to another destination point.
+Convergence time: Convergence timeis a measure of how fast a group of routers reach the state of convergence. This is an important evaluation metric as it indicates how efficient are the intelligent nodes. 
+Throughput: Is the ratio of number packets delivered to the duration of time during which these packets were sent.
+Packet Delivery Ratio:The number of packets received by the destination node divided by the number of packets transmitted by the source node.
+Normalized routing load:Normalized Routing Load (or Normalized Routing Overhead) is defined as the total number of routing packet transmitted per data packet. It is calculated by dividing the total number of routing packets sent (includes forwarded routing packets as well) by the total number of data packets received.
+End to end delay:End-to-end delay refers to the time taken for a packet to be transmitted across a network from source to destination.
+IS: Refers to intelligent selection which is the framework which makes the nodes intelligent.BUILDING NODE INTELLIGENCE IN MANETs FOR EFFICIENT ROUTING ________________________________________________________________________________________________ 
+Department of CSE, MSRIT, Bangalore Page 27 
+
+3.2 General Description
+3.2.1 Project Perspective
+A project perspective gives you an overall idea of what components are involved in our project and how they are related to each other. 
+Here, the project consists of the ns2 network simulator which includes generators for creating randomized network scenarios and AWKscripts to measure convergence time, throughput packet delivery ratio, normalized routing load and end to end delay using the output of the simulation. It also includes a user interface created using Perl, which can invoke NAM a network animator provided with ns2, to visualize the simulations.
+We generate the graphs using the measured values of the performancemetrics and compare the performance of our intelligent nodes and the non intelligent ones. This will prove to us which one is better. 
+3.2.2 Project Functions
+Table 3.1 Use case TableClass of use cases	Use cases	Description of use cases
+Use case related to development	Nodes intelligently selecting the protocols	Algorithm which allows the nodes to know its surrounding environment ,make them intelligent and select either AODV and DSDV 
+Use case related to simulation	Run simulation	It is use to run theselected protocol using Ns2
+Generate scenario	Here the scenario files are generated 
+Take the input from the user	Here the user specifies the input for current scenario.
+
