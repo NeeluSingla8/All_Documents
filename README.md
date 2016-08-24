@@ -1,5 +1,4 @@
 
-"manets","cem_aodv","network lifetime","convergence time","traditional aodv","energy management","routing protocol","average energy consumed","packet delivery ratio","remaining energy capacity",
 
 "real_estate","notify","create","listings","action","data =","address","address = number","join d1","union d1",
 
