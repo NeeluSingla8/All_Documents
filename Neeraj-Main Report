@@ -1,0 +1,1539 @@
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 1
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Table of Contents
+CERTIFICATE………………………………………………………………………………………………………………....i
+DECLARATION……………………………………………………………………………………………………………....ii
+ABSTRACT…………………………………………………………………………………………………………………...iii
+ACKNOWLWDGEMENT……………………………………………………………………………………………………iv
+1. COMPANY PROFILE .................................................................................................................................................. 4
+1.1. ALPHA NET TECHNOLOGIES PVT. LTD ..................................................................................................................... 4
+1.2. SOME KEY FACTS AND NUMBERS ............................................................................................................................ 5
+1.3. THE ALPHA NET STRENGTH ..................................................................................................................................... 6
+1.4. THE ALPHA NET CORE COMPETENCIES .................................................................................................................... 7
+1.5. OUR PRESTIGIOUS CLIENTS ...................................................................................................................................... 8
+1.6. CURRENT PROJECTS ................................................................................................................................................. 9
+2. JAVA TECHNOLOGY ............................................................................................................................................... 13
+2.1. THE JAVA PROGRAMMING LANGUAGE ................................................................................................................... 13
+2.2. THE JAVA PLATFORM ............................................................................................................................................. 15
+2.3. EXCEPTION HANDLING ........................................................................................................................................... 16
+2.4. MULTITHREADING .................................................................................................................................................. 18
+2.5. COLLECTIONS FRAMEWORK ................................................................................................................................... 19
+2.6. JDBC ..................................................................................................................................................................... 21
+2.6.1. JDBC Architecture ........................................................................................................................................ 22
+2.6.2. JDBC Components ........................................................................................................................................ 24
+2.6.3. JDBC Drivers ............................................................................................................................................... 26
+2.7. REMOTE METHOD INVOCATION ............................................................................................................................. 27
+2.7.1. RMI Architecture .......................................................................................................................................... 27
+2.7.2. RMI Architecture Layers............................................................................................................................... 28
+2.7.3. Using RMI ..................................................................................................................................................... 29
+3. SOFTWARE & OTHER TECHNOLOGIES ............................................................................................................ 30
+3.1. J2SE – JAVA 2 STANDARD EDITION ....................................................................................................................... 30
+3.2. J2EE – JAVA 2 ENTERPRISE EDITION ..................................................................................................................... 31
+3.3. J2ME – JAVA 2 MICRO EDITION ............................................................................................................................. 32
+3.4. WEB COMPONENTS ................................................................................................................................................ 33
+3.5. BUSINESS COMPONENTS......................................................................................................................................... 34
+3.6. JAVA EE 5 APIS ..................................................................................................................................................... 35
+3.6.1. Enterprise JavaBeans Technology ................................................................................................................ 35
+3.6.2. Java Servlet Technology ............................................................................................................................... 36
+3.6.3. JavaServer Pages Technology ...................................................................................................................... 36
+3.6.4. JavaServer Pages Standard Tag Library ...................................................................................................... 36
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 2
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.6.5. Java Message Service API ............................................................................................................................ 37
+3.6.6. JavaMail API ................................................................................................................................................ 37
+3.6.7. Java Database Connectivity API .................................................................................................................. 37
+3.7. NETBEANS ............................................................................................................................................................. 38
+3.7.1. NetBeans – Developing Windows Application .............................................................................................. 38
+3.7.2. NetBeans – Developing Web Application, Enterprise Application and Web Service ................................... 39
+3.8. GLASSFISH ............................................................................................................................................................. 40
+3.9. APACHE TOMCAT ................................................................................................................................................... 41
+3.10. MYSQL DATABASE SERVER .................................................................................................................................. 42
+4. WEB INTERFACE ...................................................................................................................................................... 44
+4.1. HTML .................................................................................................................................................................... 44
+4.2. XML ...................................................................................................................................................................... 45
+4.3. XHTML ................................................................................................................................................................. 46
+4.4. CSS ........................................................................................................................................................................ 47
+4.4.1. CSS provides means to customize inbuilt HTML tags................................................................................... 47
+4.4.2. Multiple Styles Will Cascade Into One ......................................................................................................... 48
+4.5. JAVASCRIPT ........................................................................................................................................................... 49
+4.5.1. A few words about JavaScript ....................................................................................................................... 49
+4.5.2. Purpose of using JavaScript ......................................................................................................................... 49
+5. SOFTWARE LIFE CYCLE MODEL ........................................................................................................................ 50
+5.1. DIFFERENT PHASES OF THE CLASSICAL WATERFALL MODEL ................................................................................... 50
+5.2. FEASIBILITY STUDY ............................................................................................................................................... 51
+5.3. REQUIREMENTS ANALYSIS AND SPECIFICATION .................................................................................................... 52
+5.4. DESIGN ................................................................................................................................................................... 53
+5.5. CODING AND UNIT TESTING ................................................................................................................................... 53
+5.6. INTEGRATION AND SYSTEM TESTING ..................................................................................................................... 54
+5.7. MAINTENANCE ....................................................................................................................................................... 54
+6. PROJECT - WebDriveExplorer ................................................................................................................................. 55
+6.1. SOFTWARE REQUIREMENT SPECIFICATION ............................................................................................................. 55
+6.1.1. Overview ....................................................................................................................................................... 55
+6.1.2. Current System .............................................................................................................................................. 56
+6.1.3. Business Functions Provided in Proposed System ........................................................................................ 57
+6.1.4. Input Requirements of the System ................................................................................................................. 57
+6.1.5. Output Requirements of the System .............................................................................................................. 57
+6.1.6. Special User Requirements ........................................................................................................................... 58
+6.1.7. Modules......................................................................................................................................................... 58
+6.1.8. Users of the System ....................................................................................................................................... 58
+6.1.9. Technologies to be used ................................................................................................................................ 59
+6.1.10. Software Requirements ................................................................................................................................. 60
+6.1.11. Hardware Requirements ............................................................................................................................... 60
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 3
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.2. DATA MODEL ......................................................................................................................................................... 61
+6.3. DATA FLOW DIAGRAMS ......................................................................................................................................... 63
+6.3.1. Trail Request Maintenance ........................................................................................................................... 63
+6.3.2. Approve User on Trial .................................................................................................................................. 64
+6.3.3. Web Drive Plan Maintenance ....................................................................................................................... 65
+6.3.4. Profile Management ..................................................................................................................................... 66
+6.3.5. Manage Web Drive ....................................................................................................................................... 67
+6.3.6. Share Files .................................................................................................................................................... 68
+6.3.7. View Shared Files ......................................................................................................................................... 69
+6.4. SCREEN LAYOUTS .................................................................................................................................................. 70
+6.4.1. Login ............................................................................................................................................................. 70
+6.4.2. Manage WebDrive Plan ................................................................................................................................ 71
+6.4.3. Trial Request Maintenance ........................................................................................................................... 72
+6.4.4. Manage All Files ........................................................................................................................................... 73
+6.4.5. View Recent Activities ................................................................................................................................... 74
+6.4.6. Upload File ................................................................................................................................................... 75
+6.4.7. Create Folder ................................................................................................................................................ 76
+6.4.8. Share Files .................................................................................................................................................... 76
+6.4.9. Show Starred Files ........................................................................................................................................ 77
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 4
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+1. COMPANY PROFILE
+1.1. Alpha Net Technologies Pvt. Ltd
+Alpha Net is a global provider of technology services enabling clients to reach their business goals.
+Alpha Net is a global software consulting and application development company specialized in tackling
+the most complex business problems through the use of technology, maximizing investment
+performance across portfolio of business critical applications, while reducing time and risk, since 1999.
+Alpha Net currently has development centers in Santa Clara, CA, US and Chandigarh, India. The
+Alpha Net's development centers are state-of-the-art facilities in terms of their infrastructure, data
+security, and physical location projection. The development centers have IT infrastructures that span
+from Open Systems environments like Linux to the latest Windows-based systems. The centers have
+high-speed data links that connect them with each other and with the clients to create seamless virtual
+teams. Since we know security is important to you, the networks are protected through multiple layers
+of firewalls and DMZ implementations to ensure our customers' assets are protected.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 5
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+1.2. Some Key Facts and Numbers
+~ Current company is in State of California, United States of America.
+~ Parent Company founded in State of New York, United States of America in Dec 1999
+~ Indian Operations started in Dec 2003.
+~ Current Gross Revenues of company are 7 Million USD.
+~ Total employee strength in USA and India: 75
+~ Awarded ―Small Business Specialist‖ certification from Microsoft Corporation
+~ Tie up with Chandigarh Engineering College (CEC), Landran to automate its all processes due
+to the demand of modern era.
+~ Memorandum of Understanding (MoU) with Chandigarh Engineering College (CEC), Landran
+to provide training and placements of its students from MCA, CSE and other IT disciplines.
+~ Organize all events in Chitkara Institute of Engineering and Technology (CIET), Rajpura,
+Chandigarh in the years 2008 & 2009.
+~ Memorandum of Understanding (MoU) with Chandigarh College of Engineering and
+Technology (CCET), Chandigarh for consultancy projects.
+~ Placement for brilliant student(s) from the training to the company and after certain period of
+time according to their performance shifts them to the US office on H1B/L1B Visa.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 6
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+1.3. The Alpha Net Strength
+~ People focused on personal growth and continuous learning
+~ Commitment to excellence
+~ Rapid response to your needs
+~ process orientation & strict adherence to development methodologies
+~ Timely adoption & assimilation of technologies
+~ Collaborative business model
+~ Flexibility in development model
+~ Honest, open and ethical relationships with all
+We provide expertise in the following areas:
+Staff Augmentation: Alpha Net Staff Augmentation provides a short and long term solution for
+organizations the need help managing the people, processes and technologies that deliver and sustain
+value in the complex IT implementation environment. Often organizations have projects that require
+the focus of key resources; Alpha Net Staff Augmentation can assist these organizations on a project
+specific basis to ensure projects are completed on schedule. Alpha Net Staff Augmentation matches
+experienced IT professionals and internal staff to create a powerful team that support development
+while saving organizations the time and money of developing such teams in-house.
+Risk sharing projects: Alpha Net risk sharing services provides a short and long term solution for
+organizations that need help implementing advanced technologies and like to manage their people &
+processes. Since Information technology is intended to help our clients become more effective in their
+business operations. We are open to linking our charges for a project with the level of business benefit
+our clients realize or assist clients on a project by assuming + & - % risk to ensure projects are
+completed on scheduled time & cost.
+Fixed bid projects: Our 'fixed bid' projects model provides the framework for a win-win scenario, in
+which the client is assured of quality deliverables within budget, on schedule. At the same time, we are
+assured of rewards for successful and on-time delivery of the assigned task. Clients also have the
+flexibility to choose a transaction-based model, where they pay us as and when realize revenues and is
+linked to the volume of transaction handled by the system we develop.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 7
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Time & Material projects: Our clients can utilize the services of our highly qualified resources on
+time and material assignments for consulting. We offer time and material services for both onsite as
+well as offshore assignments. In such engagements, the client has complete flexibility in working with
+our Associate and engaging them in tasks that match their expertise.
+1.4. The Alpha Net Core Competencies
+Our multiple process models address specific customer and project needs and span Domain Service,
+Maintenance, Testing, Conversion and Development process models.
+We build personal relationships with our staff to understand their goals, and we leverage their strengths
+to improve the services they provide. We pride ourselves to be the Agile & Flexible solution delivery
+provider. Alpha Net & our developers could provide services in most flexible environments.
+Consulting and Implementation: Consulting and Implementation services in ERP domain (primarily
+in SAP R/3 and Oracle Applications) and advances Internet technologies i.e. Microsoft .NET, J2EE
+framework and open technologies like Ruby, PHP, Python, etc.
+Content Development and Technical Writing: We have written multiple technical books for our US
+Clients. Some of the books which we have written and are being used in training for US companies are:
+~ OOP Programming using Java
+~ J2EE Programming
+~ Introduction to Struts
+~ .NET framework
+~ ASP.NET
+~ XML
+~ Web services
+Enterprise Application Development: We are developing Web solutions for complex integration
+issues between ERP and legacy systems. We are involved in multiple offshore projects for developing
+Enterprise Applications using Java and .NET technologies. Alpha Net specializes is providing tailorALPHA
+NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 8
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+made outsourcing solutions for development and maintenance of your non-core business requirements
+using reliable, secure and agile infrastructure & resources
+Training in Advanced Technologies: Training in Advanced technologies: Shortage of skilled
+manpower prompted us to open Training division to cater to our company needs and for outside world
+as well. Our training division is providing training in following streams:
+Enterprise Application development using Java & DOTNET Technologies
+Mobile Application development using Java & DOTNET Technologies
+Web Application development using Java, DOTNET & PHP
+Games development using C++, C#, Java
+Hardware interfacing development using C, C++, VC++
+Device Driver development using Assembly Language
+Embedded Devices design and development using Assembly Language and C.
+1.5. Our Prestigious Clients
+List below includes our partial client base.
+Wells Fargo Bank
+Cisco
+VMware Inc
+DuPont
+International Paper
+Solyndra Inc
+Autodesk Inc.
+Applied Materials
+Silicon Graphics Inc
+Gold Bank
+Sappi Fine Paper
+Sinai Medical Center
+IBM
+Adaptec Inc
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 9
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Landmark Education Corporation
+Form Factor Inc
+Tran bay Cable
+Steel River Infrastructure Partners
+Transcontinental Media Group
+Ready touch Inc
+Nextg Networks
+Novartis
+Biomed Systems Inc
+Showmypc.com
+NEC
+1.6. Current Projects
+Biomed LIMS (Laboratory Information Management System) – Biomed LIMS is an Enterprise
+Application that provides the functionality to manage all the processes of a Medical Laboratory. The
+basic idea behind the application is to manage Patient’s Demographic & Medical Information, create
+Requisitions, manage Specimens using Barcodes, Test Report & Bills Automation, inform the Patient’s
+Physician using FAX or Email, maintains the patient Accession History and also generate graphical
+Test Reports for analysis.
+Eye24By7 – It is a product to provide the complete Surveillance solutions. It provides the tools that
+communicate with IPCameras to display live feed. Provision of saving the live feed will also be
+provided in this system. Eye24By7 is intended to target private or government organizations, schools,
+colleges, hospitals etc. Eye24By7 customers will be able to centralize and automate their surveillance.
+Tools will be developed for customers using which customers would be able to:
+Test IP Camera installed on their premises.
+View & Save videos by capturing live feed coming from IPCamera.
+Upload the saved videos to a central repository.
+View saved video on web pages.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 10
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+CSRPP – Central Seniority Recasting of Punjab Police CSRPP application has specially designed
+interfaces for navigational purposes and sophisticated formulas for generating powerful results. The
+application is divided into two modules; one module is designed for gathering data (service particulars
+of officers) from various units of Punjab Police scattered in whole Punjab. The data entry can be done
+online as well as offline by the various units using CSRPP. The second module is the core part of
+application, which is designed for recasting the central seniority of various officers on the basis of
+seniority criteria of Punjab Police Act & the data gathered from all units of Punjab Police.
+Online CIMS (Online Current Index of Medical Specialties) – It is an application which will keep a
+large knowledge base of medicines. The main objective behind the application to develop a search
+engine which allow users to look around the medicines available in the market containing specific salt.
+Application is intended to target the general public like pharmaceutical companies, physicians,
+chemists and patients, who are concerned with medicines in any way.
+Fin Tech – Fin Tech is EDPA (Electronics Device Production Automation) company. It has its own
+Research & Development division and also Production division to design and develop Electronics
+Circuits. To maintain information of their clients all over the world, maintain information of all
+products developed by them and automate their internal processes, an Enterprise Application will be
+developed using Java Technologies. The main objective of this application is to provide an interface for
+the users using which they can get the information regarding the different electronic devices
+Alphanizer – It is a social networking based web application intended to be a meeting place for users
+from various backgrounds, cultures and with different characteristics. It helps people to maintain
+existing relationships and develop new ones with other users who share same hobbies and interests.
+'Alphanizer' proves to be a platform for users to share their photos, videos and music files with their
+friends, acquaintances and just about anybody with internet connectivity.
+TRMgr (Technical Resource Manager) – TRMgr is an enterprise application that will provide a web
+interface for technical resources to learn java programming. The resources are WebIDE and Online
+Java API Documentation. WebIDE is a powerful online programming environment for java
+programming. It provides an online environment to the users where they can develop, compile and run
+their java programs without the installation of any java specific softwares and doesn't require any path
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 11
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+settings. Online Java API Documentation will provide online documentation for methods of the classes
+and interfaces in Java API with examples using which the users can easily learn the use Java API
+specific classes and interfaces.
+E Organization – It is an enterprise application to automate all the processes of an educational
+organization like engineering colleges. The goal of the application is to keep track of all the things
+whether they are tangible or intangible, which are coming inside the organization or going outside of
+the organization, which makes the scope of application vast. E Organization is the role based
+application. Different designations of the organization are provided with different access rights.
+Enterprise Resource Planning (ERP) System – The ERP system would cater to the requirements in
+the area of Sales, order and invoicing, production planning, production, inventory, purchase, finance,
+personnel and payroll management.
+Shipping Manager – Web based communication between ERP and non ERP systems.
+Document Management System – The system helps in scanning, optical character recognition (OCR),
+and indexing of between 2 million and 12 million pages of tobacco industry documents. The system
+then helps in document search, retrieval, indexing, workflow management and distribution.
+Titan 3000 – Accounts Receivable Module – Titan 3000 is a fully integrated business solution for the
+perishable goods industry. The system is broken into the modules such as: Customer Service, Loader,
+Route Accounting, Accounts Receivable, Commissions, Sales Analysis, Production, Inventory Control,
+Purchasing and Receiving, Accounts Payable, Cost Accounting, General ledger, External Data Devices
+(hand-held computers), and a Custom Report Writer.
+Web Drive – Web Drive would be a web Product that will provide a common platform for storing and
+sharing data online. Web Drive is basically, the ability to store and share data in the form of files on the
+Internet. The data stored on a Web Drive can be accessed using a web browser (rather than directly like
+on a network drive).
+Memories Bucket – Share Memorable Pictures Memories Bucket, is a web based application and is
+intended to offer creative online photo sharing solutions for allowing the users to organize their
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 12
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+captured memories and make them presentable to all the friends in a group. It allows the registered user
+to make customized album by uploading specific photos. The album created by the user can be private
+as well as shared. The end user is provided with a user friendly interface to create/manage group(s) for
+maintaining friends for sharing images with specific rights. It provides a smooth, intuitive interface for
+the user to create fascinating layouts by selecting background themes and by applying the different
+attractive themes provided by the application. The registered user can find his/her friends who are
+already registered with Memories Bucket. He/she is also allowed to invite new friends to join
+Memories Bucket. User can comment on the photographs which are available for viewing. The
+application also provides a smart tool (windows application), which allows the registered users to
+manage the pictures/albums without using web application.
+a2zwireless – a2zwireless is a web application provides the online mobile shop to the users. Company
+has integrated the Search and Comparison module to provide the user with extensive search capability
+on the basis of pre defined search parameters. User can compare features of different phones.
+Web Mailer – Web Mailer is a web Product that can be integrated in any web application for sending
+mass emails. Web Mailer is for the usage in professional environment that’s why Web Mailer provides
+the capability of customizing a mail that is to be sent to a number of recipients. It will also provide the
+capability of customizing a mail with a help of a template or user can create his/her own template for
+the mail. Web Mailer will also provide the capability of saving a mail in to drafts so that a user can start
+from where he left.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 13
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2. JAVA TECHNOLOGY
+Java technology is both a programming language and a platform.
+2.1. The Java Programming Language
+The Java programming language is a high-level language that can be characterized by all of the
+following characteristics
+Simple
+Object oriented
+Distributed
+Multithreaded
+Architecture neutral
+Portable
+High performance
+Robust
+In the Java programming language, all source code is first written in plain text files ending with the
+.java extension. Those source files are then compiled into .class files by the javac compiler. A
+.class file does not contain code that is native to your processor; it instead contains bytecodes — the
+machine language of the Java Virtual Machine1 (Java VM). The java launcher tool then runs your
+application with an instance of the Java Virtual Machine.
+Figure 2-1 An overview of the software development process
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 14
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Because the Java VM is available on many different operating systems, the same .class files are
+capable of running on Microsoft Windows, the Solaris TM Operating System (Solaris OS), Linux, or
+Mac OS. Some virtual machines, such as the Java HotSpot virtual machine, perform additional steps at
+runtime to give your application a performance boost. This include various tasks such as finding
+performance bottlenecks and recompiling (to native code) frequently used sections of code.
+Figure 2-2 Same application running on multiple platforms
+Through the Java VM, the same application is capable of running on multiple platforms.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 15
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.2. The Java Platform
+A platform is the hardware or software environment in which a program runs. Most platforms can be
+described as a combination of the operating system and underlying hardware. The Java platform differs
+from most other platforms in that it's a software-only platform that runs on top of other hardware-based
+platforms.
+The Java platform has two components:
+The Java Virtual Machine
+The Java Application Programming Interface (API)
+Java Virtual Machine is the base for the Java platform and is ported onto various hardware-based
+platforms.
+The API is a large collection of ready-made software components that provide many useful capabilities.
+It is grouped into libraries of related classes and interfaces; these libraries are known as packages.
+Figure 2-3 Java Platform
+The API and Java Virtual Machine insulate the program from the underlying hardware.
+Every full implementation of the Java platform gives you the following features:
+Development Tools: The development tools provide means for compiling, running, debugging, and
+documenting your applications. The main tools are the javac compiler, the java launcher, and the
+javadoc documentation tool.
+Application Programming Interface (API): The API provides the core functionality of the Java
+programming language. It offers a wide array of useful classes ready for use in your own applications.
+It spans everything from basic objects, to networking and security, to XML generation and database
+access, etc.
+Deployment Technologies: The JDK software provides standard mechanisms such as the Java Web
+Start software and Java Plug-In software for deploying your applications to end users.
+User Interface Toolkits: The Swing and Java 2D toolkits make it possible to create sophisticated
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 16
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Graphical User Interfaces (GUIs).
+Integration Libraries: Integration libraries such as the Java IDL, JDBC, JNDI, Java RMI, and Java
+Remote Method Invocation over Internet Inter-ORB Protocol Technology (Java RMI-IIOP
+Technology) enable database access and manipulation of remote objects.
+2.3. Exception Handling
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow
+of the program's instructions.
+When an error occurs within a method, the method creates an object and hands it off to the runtime
+system. The object, called an exception object, contains information about the error, including its type
+and the state of the program when the error occurred. Creating an exception object and handing it to the
+runtime system is called throwing an exception.
+After a method throws an exception, the runtime system attempts to find something to handle it. The set
+of possible "somethings" to handle the exception is the ordered list of methods that had been called to
+get to the method where the error occurred. The list of methods is known as the call stack (see the next
+figure).
+Figure 2-4 The call stack
+The runtime system searches the call stack for a method that contains a block of code that can handle
+the exception. This block of code is called an exception handler. The search begins with the method in
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 17
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+which the error occurred and proceeds through the call stack in the reverse order in which the methods
+were called. When an appropriate handler is found, the runtime system passes the exception to the
+handler. An exception handler is considered appropriate if the type of the exception object thrown
+matches the type that can be handled by the handler.
+The exception handler chosen is said to catch the exception. If the runtime system exhaustively
+searches all the methods on the call stack without finding an appropriate exception handler, as shown in
+the next figure, the runtime system (and, consequently, the program) terminates.
+Figure 2-5 Searching the call stack for the exception handler
+Using exceptions to manage errors has following advantages over traditional error-management
+techniques:
+Separating Error-Handling Code from "Regular" Code
+Propagating Errors Up the Call Stack
+Grouping and Differentiating Error Types
+A program can catch exceptions by using a combination of the try, catch, and finally blocks.
+The try block identifies a block of code in which an exception can occur.
+The catch block identifies a block of code, known as an exception handler that can handle a particular
+type of exception.
+The finally block identifies a block of code that is guaranteed to execute, and is the right place to close
+files, recover resources, and otherwise clean up after the code enclosed in the try block.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 18
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.4. Multithreading
+Threads are called lightweight processes. Threads exist within a process — every process has at least
+one. Threads share the process's resources, including memory and open files. This makes for efficient,
+but potentially problematic, communication.
+Multithreaded execution is an essential feature of the Java platform. Every application has at least one
+thread — or several, if you count "system" threads that do things like memory management and signal
+handling. But from the application programmer's point of view, you start with just one thread, called
+the main thread. This thread has the ability to create additional threads.
+Each thread is associated with an instance of the class Thread. There are two basic strategies for using
+Thread objects to create a concurrent application.
+To directly control thread creation and management, simply instantiate Thread each time the
+application needs to initiate an asynchronous task.
+To abstract thread management from the rest of your application, pass the application's tasks to an
+executor.
+An application that creates an instance of Thread must provide the code that will run in that thread.
+There are two ways to do this:
+Provide a Runnable object- The Runnable interface defines a single method, run, meant to contain the
+code executed in the thread.
+Subclass Thread- the Thread class itself implements Runnable, though its run method does nothing. An
+application can have subclass Thread, providing its own implementation of run.
+The first way, which employs a Runnable object, is more general, because the Runnable objects can
+subclass a class other than Thread. The second way is easier to use in simple applications, but is limited
+by the fact that your task class must be a descendant of Thread.
+The Thread class defines a number of methods useful for thread management. These include static
+methods, which provide information about, or affect the status of, the thread invoking the method. The
+other methods are invoked from other threads involved in managing the thread and Thread object.
+Threads communicate primarily by sharing access to fields and the objects reference fields refer to.
+This form of communication is extremely efficient, but makes two kinds of errors possible: thread
+interference and memory consistency errors. The tool needed to prevent these errors is synchronization.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 19
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.5. Collections Framework
+A collection is simply an object that groups multiple elements into a single unit. Collections are used to
+store, retrieve, manipulate, and communicate aggregate data.
+A collections framework is a unified architecture for representing and manipulating collections. All
+collections frameworks contain the following:
+Interfaces: These are abstract data types that represent collections. Interfaces allow collections to be
+manipulated independently of the details of their representation.
+Implementations: These are the concrete implementations of the collection interfaces. In essence, they
+are reusable data structures.
+Algorithms: These are the methods that perform useful computations, such as searching and sorting,
+on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the
+same method can be used on many different implementations of the appropriate collection interface. In
+essence, algorithms are reusable functionality.
+The collections framework provides the following benefits:
+Reduces programming effort
+Increases program speed and quality
+Allows interoperability among unrelated APIs
+Reduces effort to learn and to use new APIs
+Reduces effort to design new APIs
+Fosters software reuse
+The collections framework consists of:
+Collection Interfaces - Represent different types of collections, such as sets, lists and maps. These
+interfaces form the basis of the framework.
+General-Purpose Implementations - Primary implementations of the collection interfaces.
+Legacy Implementations - The collection classes from earlier releases, Vector and Hash table, have
+been retrofitted to implement the collection interfaces.
+Special-purpose Implementations - Implementations designed for use in special situations. These
+implementations display nonstandard performance characteristics, usage restrictions, or behavior.
+Concurrent Implementations - Implementations designed for highly concurrent use.
+Wrapper Implementations - Add functionality, such as synchronization, to other implementations.
+Convenience Implementations - High-performance "mini-implementations" of the collection
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 20
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+interfaces.
+Abstract Implementations - Partial implementations of the collection interfaces to facilitate custom
+implementations.
+Algorithms - Static methods that perform useful functions on collections, such as sorting a list.
+Infrastructure - Interfaces that provide essential support for the collection interfaces.
+Array Utilities - Utility functions for arrays of primitives and reference objects. Not, strictly speaking,
+a part of the Collections Framework, this functionality was added to the Java platform at the same time
+and relies on some of the same infrastructure
+The general purpose implementations are summarized in the table below:
+Implementations
+Hash Table Resizable Array Balanced Tree
+Interfaces
+Set HashSet TreeSet
+List ArrayList
+Map HashMap TreeMap
+Table 2-1
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 21
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.6. JDBC
+JDBC stands for "Java DataBase Connectivity". It is an API (Application Programming Interface)
+which consists of a set of Java classes, interfaces and exceptions and a specification to which both
+JDBC driver vendors and JDBC developers adhere when developing applications.
+JDBC is a very popular data access standard. RDBMS (Relational Database Management Systems) or
+third-party vendors develop drivers which adhere to the JDBC specification. Other developers use these
+drivers to develop applications which access those databases.
+The JDBC API is a Java API that can access any kind of tabular data, especially data stored in a
+Relational Database.
+JDBC helps you to write java applications that manage these three programming activities:
+Connect to a data source, like a database
+Send queries and update statements to the database
+Retrieve and process the results received from the database in answer to your query
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 22
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.6.1. JDBC Architecture
+The JDBC API supports both two-tier and three-tier processing models for database access.
+Figure 2-6 Two-tier Architecture for Data Access
+In the two-tier model, a Java application talks directly to the data source. This requires a JDBC driver
+that can communicate with the particular data source being accessed. A user's commands are delivered
+to the database or other data source, and the results of those statements are sent back to the user. The
+data source may be located on another machine to which the user is connected via a network. This is
+referred to as a client/server configuration, with the user's machine as the client, and the machine
+housing the data source as the server.
+In the three-tier model, commands are sent to a "middle tier" of services, which then sends the
+commands to the data source. The data source processes the commands and sends the results back to
+the middle tier, which then sends them to the user. MIS directors find the three-tier model very
+attractive because the middle tier makes it possible to maintain control over access and the kinds of
+updates that can be made to corporate data. Another advantage is that it simplifies the deployment of
+applications. Finally, in many cases, the three-tier architecture can provide performance advantages.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 23
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Figure 2-7 Three-tier Architecture for Data Access
+Until recently, the middle tier has often been written in languages such as C or C++, which offer fast
+performance. However, with the introduction of optimizing compilers that translate Java bytecode into
+efficient machine-specific code and technologies such as Enterprise JavaBeans, the Java platform is
+fast becoming the standard platform for middle-tier development. This is a big plus, making it possible
+to take advantage of Java's robustness, multithreading, and security features.
+With enterprises increasingly using the Java programming language for writing server code, the JDBC
+API is being used more and more in the middle tier of a three-tier architecture. Some of the features
+that make JDBC a server technology are its support for connection pooling, distributed transactions,
+and disconnected rowsets. The JDBC API is also what allows access to a data source from a Java
+middle tier.
+Different database systems have surprisingly little in common: just a similar purpose and a mostly
+compatible query language. Beyond that, every database has its own API that you must learn to write
+programs that interact with the database. This has meant that writing code capable of interfacing with
+databases from more than one vendor has been a daunting challenge. Cross-database APIs exist, most
+notably Microsoft's ODBC API, but these tend to find themselves, at best, limited to a particular
+platform.
+JDBC is Sun's attempt to create a platform-neutral interface between databases and Java. With JDBC,
+you can count on a standard set of database access features and (usually) a particular subset of SQL,
+SQL-92. The JDBC API defines a set of interfaces that encapsulate major database functionality,
+including running queries, processing results, and determining configuration information. A database
+vendor or third-party developer writes a JDBC driver, which is a set of classes that implements these
+interfaces for a particular database system. An application can use a number of drivers interchangeably.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 24
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Following figure shows how an application uses JDBC to interact with one or more databases without
+knowing about the underlying driver implementations.
+2.6.2. JDBC Components
+JDBC includes four components:
+ The JDBC API:
+The JDBC API provides programmatic access to relational data from the Java programming
+language. Using the JDBC API, applications can execute SQL statements, retrieve results, and
+propagate changes back to an underlying data source. The JDBC API can also interact with
+multiple data sources in a distributed, heterogeneous environment.
+The JDBC API is part of the Java platform, which includes the Java Standard Edition (Java SE
+) and the Java Enterprise Edition (Java EE). The JDBC 4.0 API is divided into two packages:
+java.sql and javax.sql. Both packages are included in the Java SE and Java EE platforms.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 25
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+ JDBC Driver Manager:
+The JDBC DriverManager class defines objects which can connect Java applications to a JDBC
+driver. DriverManager has traditionally been the backbone of the JDBC architecture. It is quite
+small and simple.
+The Standard Extension packages javax.naming and javax.sql let you use a DataSource object
+registered with a Java Naming and Directory Interface (JNDI) naming service to establish a
+connection with a data source. You can use either connecting mechanism, but using a
+DataSource object is recommended whenever possible.
+ JDBC Test Suite:
+The JDBC driver test suite helps you to determine that JDBC drivers will run your program.
+These tests are not comprehensive or exhaustive, but they do exercise many of the important
+features in the JDBC API.
+ JDBC-ODBC Bridge:
+The Java Software bridge provides JDBC access via ODBC drivers. Note that you need to load
+ODBC binary code onto each client machine that uses this driver. As a result, the ODBC driver
+is most appropriate on a corporate network where client installations are not a major problem,
+or for application server code written in Java in three-tier architecture.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 26
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.6.3. JDBC Drivers
+JDBC drivers are available for most database platforms, from a number of vendors and in a number of
+different flavors. There are four categories of drivers:
+Type 1 JDBC-ODBC bridge drivers
+Type 1 drivers use a bridge technology to connect a Java client to an ODBC database system. The
+JDBC-ODBC Bridge from Sun and InterSolv is the only existing example of a Type 1 driver. Type 1
+drivers require some sort of non-Java software to be installed on the machine running your code, and
+they are implemented using native code.
+Type 2 Native-API partly Java drivers
+Type 2 drivers use a native code library to access a database, wrapping a thin layer of Java around the
+native library. For example, with Oracle databases, the native access might be through the Oracle Call
+Interface (OCI) libraries that were originally designed for C/C++ programmers. Type 2 drivers are
+implemented with native code, so they may perform better than all-Java drivers, but they also add an
+element of risk, as a defect in the native code can crash the Java Virtual Machine.
+Type 3 Net-protocol All-Java drivers
+Type 3 drivers define a generic network protocol that interfaces with a piece of custom middleware.
+The middleware component might use any other type of driver to provide the actual database access.
+BEA's WebLogic product line (formerly known as WebLogic Tengah and before that as jdbcKona/T3)
+is an example. These drivers are especially useful for applet deployment, since the actual JDBC classes
+can be written entirely in Java and downloaded by the client on the fly.
+Type 4 Native-protocol All-Java drivers
+Type 4 drivers are written entirely in Java. They understand database-specific networking protocols and
+can access the database directly without any additional software. These drivers are also well suited for
+applet programming, provided that the Java security manager allows TCP/IP connections to the
+database server.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 27
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+2.7. Remote Method Invocation
+Remote Method Invocation (RMI) facilitates object function calls between Java Virtual Machines
+(JVMs). JVMs can be located on separate computers - yet one JVM can invoke methods belonging to
+an object stored in another JVM. Methods can even pass objects that a foreign virtual machine has
+never encountered before, allowing dynamic loading of new classes as required.
+The design goal for the RMI architecture was to create a Java distributed object model that integrates
+naturally into the Java programming language and the local object model.
+2.7.1. RMI Architecture
+The RMI architecture is based on one important principle: the definition of behavior and the
+implementation of that behavior are separate concepts. RMI allows the code that defines the behavior
+and the code that implements the behavior to remain separate and to run on separate JVMs.
+This fits nicely with the needs of a distributed system where clients are concerned about the definition
+of a service and servers are focused on providing the service.
+Specifically, in RMI, the definition of a remote service is coded using a Java interface. The
+implementation of the remote service is coded in a class. Therefore, the key to understanding RMI is to
+remember that interfaces define behavior and classes define implementation.
+While the following diagram illustrates this separation,
+Figure 2-8 RMI System
+RMI supports two classes that implement the same interface. The first class is the implementation of
+the behavior, and it runs on the server. The second class acts as a proxy for the remote service and it
+runs on the client. This is shown in the following diagram.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 28
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Figure 2-9 A client program makes method calls on the proxy object
+A client program makes method calls on the proxy object, RMI sends the request to the remote JVM,
+and forwards it to the implementation. Any return values provided by the implementation are sent back
+to the proxy and then to the client's program.
+2.7.2. RMI Architecture Layers
+The RMI implementation is essentially built from three abstraction layers. The first is the Stub and
+Skeleton layer, which lies just beneath the view of the developer. This layer intercepts method calls
+made by the client to the interface reference variable and redirects these calls to a remote RMI service.
+The next layer is the Remote Reference Layer. This layer understands how to interpret and manage
+references made from clients to the remote service objects. In JDK 1.1, this layer connects clients to
+remote service objects that are running and exported on a server. The connection is a one-to-one
+(unicast) link. In the Java 2 SDK, this layer was enhanced to support the activation of dormant remote
+service objects via Remote Object Activation.
+The transport layer is based on TCP/IP connections between machines in a network. It provides basic
+connectivity, as well as some firewall penetration strategies.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 29
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Figure 2-10 A layered architecture of RMI System
+By using a layered architecture each of the layers could be enhanced or replaced without affecting the
+rest of the system. For example, the transport layer could be replaced by a UDP/IP layer without
+affecting the upper layers.
+2.7.3. Using RMI
+A working RMI system is composed of following parts:
+ Interface definitions for the remote services
+ Implementations of the remote services
+ Stub and Skeleton files
+ A server to host the remote services
+ An RMI Naming service that allows clients to find the remote services
+ A class file provider (an HTTP or FTP server)
+ A client program that needs the remote services
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 30
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3. SOFTWARE & OTHER
+TECHNOLOGIES
+3.1. J2SE – Java 2 Standard Edition
+There are two principal products in the Java SE platform family:
+1) Java SE Runtime Environment (JRE)
+2) Java Development Kit (JDK).
+The Java Runtime Environment (JRE) provides the libraries, the Java Virtual Machine, and other
+components to run applets and applications written in the Java programming language. In addition, two
+key deployment technologies are part of the JRE: Java Plug-in, which enables applets to run in popular
+browsers; and Java Web Start, which deploys standalone applications over a network. It is also the
+foundation for the technologies in the Java 2 Platform, Enterprise Edition (J2EE) for enterprise
+software development and deployment. The JRE does not contain tools and utilities such as compilers
+or debuggers for developing applets and applications.
+The Java Development Kit (JDK) is a superset of the JRE, and contains everything that is in the JRE,
+plus tools such as the compilers and debuggers necessary for developing applets and applications.
+Java SE API
+The Java SE application programming interface (API) defines the manner by which an applet or
+application can make requests to and use the functionality available in the compiled Java SE class
+libraries. (The Java SE class libraries are also part of the Java SE platform.)
+The Java SE API consists of core technologies, Desktop (or client) technologies, and other
+technologies.
+Core components provide essential functionality for writing powerful enterprise-worthy programs in
+key areas such as database access, security, remote method invocation (RMI), and communications.
+Desktop components add a full range of features to help build applications that provide a rich user
+experience – deployment products such as Java Plug-in, component modeling APIs such as JavaBeans,
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 31
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+and a graphical user interface. Other components round out the functionality.
+Java Virtual Machine
+The Java Virtual Machine is responsible for the hardware- and operating system-independence of the
+Java SE platform, the small size of compiled code (bytecodes), and platform security.
+Java Platform Tools
+The Java SE platform works with an array of tools, including Integrated Development Environments
+(IDEs), performance and testing tools, and performance monitoring tools.
+3.2. J2EE – Java 2 Enterprise Edition
+Java Platform, Enterprise Edition (Java EE) builds on the solid foundation of Java Platform, Standard
+Edition (Java SE) and is the industry standard for implementing enterprise-class service-oriented
+architecture (SOA) and next-generation web applications. The SDKs contain Sun GlassFish Enterprise
+Server, previously named Sun Java System Application Server, and provide support for Java EE 5
+specifications.
+Java Platform, Enterprise Edition (Java EE) is a set of coordinated technologies that significantly
+reduces the cost and complexity of developing, deploying, and managing multitier, server-centric
+applications. Building on the Java Platform, Standard Edition (Java SE), Java EE adds the capabilities
+that provide a complete, stable, secure, and fast Java platform for the enterprise.
+Java Platform, Enterprise Edition 5 (Java EE 5) focuses on making development easier, yet retains the
+richness of the J2EE 1.4 platform. Offering new and updated features such as Enterprise JavaBeans
+(EJB) Technology 3.0, JavaServer Faces (JSF) Technology, and the latest web services APIs, Java EE
+5 makes coding simpler and more straightforward, but maintains the power that has established Java
+EE as the premier platform for web services and enterprise application development.
+The Java EE 5 SDK and Java Application Platform SDK provide support for Java EE 5 specifications,
+and the Java Application Platform SDK features additional runtimes such as Open ESB, Portlet
+Container, and Sun Java System Access Manager.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 32
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+With a primary focus on ease of development, the Java EE 5 platform offers developers ready access to
+a secure, portable, and scalable platform for their enterprise applications. Java EE 5 technology makes
+coding simpler and more straightforward through the use of Java annotations, programming based on
+POJOs (Plain Old Java Objects), and resource injection concepts. Sun GlassFish Enterprise Server
+(formerly Sun Java System Application Server and hereafter referred to as Application Server) v2.1
+supports all the technologies required by the Java EE 5 specification. A brief summary of the key Java
+EE 5 technologies is provided here.
+Key technologies in Java EE 5 include the following:
+Enterprise JavaBeans (EJB) 3.0
+Java Persistence API 1.0
+JavaServer Faces 1.2 Technology
+Web Services Metadata for the Java Platform 1.0
+Java API for XML-Based Web Services (JAX-WS) 2.0
+Java Architecture for XML Binding (JAXB) 2.0
+Streaming API for XML (StAX) 1.0
+3.3. J2ME – Java 2 Micro Edition
+J2ME stands for Java 2, Micro Edition. It is a stripped-down version of Java targeted at devices which
+have limited processing power and storage capabilities and intermittent or fairly low-bandwidth
+network connections. These include mobile phones, pagers, wireless devices and set-top boxes among
+others.
+A Sample Wireless Stack would consist of:
+Profiles
+Configurations
+Java Virtual Machines
+Host Operating System
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 33
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.4. Web Components
+Java web components are either servlets or pages created using JSP technology (JSP pages).
+Servlets are Java programming language classes that dynamically process requests and construct
+responses.
+JSP pages are text-based documents that execute as servlets but allow a more natural approach to
+creating static content.
+The web tier might include a JavaBeans component to manage the user input and send that input to
+enterprise beans running in the business tier for processing, as shown:
+Figure 3-1 Java Web Components
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 34
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.5. Business Components
+Business code, which is logic that solves or meets the needs of a particular business domain, is handled
+by enterprise beans running in the business tier.
+Following figure shows how an enterprise bean receives data from client programs, processes it (if
+necessary), and sends it to the enterprise information system tier for storage. An enterprise bean also
+retrieves data from storage, processes it (if necessary), and sends it back to the client program:
+Figure 3-2 Java Business Components
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 35
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.6. Java EE 5 APIs
+Following figure illustrates the availability of the Java EE 5 platform APIs in each Java EE container
+type. The following sections give a brief summary of the technologies required by the Java EE
+platform, and the APIs used in Java EE applications.
+Figure 3-3 Java EE APIs
+3.6.1. Enterprise JavaBeans Technology
+An Enterprise JavaBeans (EJB) component, or enterprise bean, is a body of code having fields and
+methods to implement modules of business logic. You can think of an enterprise bean as a building
+block that can be used alone or with other enterprise beans to execute business logic on the Java EE
+server.
+There are two kinds of enterprise beans: session beans and message-driven beans. A session bean
+represents a transient conversation with a client. When the client finishes executing, the session bean
+and its data are gone. A message-driven bean combines features of a session bean and a message
+listener, allowing a business component to receive messages asynchronously. Commonly, these are
+Java Message Service (JMS) messages.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 36
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+In Java EE 5, entity beans have been replaced by Java persistence API entities. An entity represents
+persistent data stored in one row of a database table. If the client terminates, or if the server shuts down,
+the persistence manager ensures that the entity data is saved.
+3.6.2. Java Servlet Technology
+Java servlet technology lets you define HTTP-specific servlet classes. A servlet class extends the
+capabilities of servers that host applications that are accessed by way of a request-response
+programming model. Although servlets can respond to any type of request, they are commonly used to
+extend the applications hosted by web servers.
+3.6.3. JavaServer Pages Technology
+JavaServer Pages (JSP) technology lets you put snippets of servlet code directly into a text-based
+document. A JSP page is a text-based document that contains two types of text: static data (which can
+be expressed in any text-based format such as HTML, WML, and XML) and JSP elements, which
+determine how the page constructs dynamic content.
+3.6.4. JavaServer Pages Standard Tag Library
+The JavaServer Pages Standard Tag Library (JSTL) encapsulates core functionality common to many
+JSP applications. Instead of mixing tags from numerous vendors in your JSP applications, you employ
+a single, standard set of tags. This standardization allows you to deploy your applications on any JSP
+container that supports JSTL and makes it more likely that the implementation of the tags is optimized.
+JSTL has iterator and conditional tags for handling flow control, tags for manipulating XML
+documents, internationalization tags, tags for accessing databases using SQL, and commonly used
+functions.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 37
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.6.5. Java Message Service API
+The Java Message Service (JMS) API is a messaging standard that allows Java EE application
+components to create, send, receive, and read messages. It enables distributed communication that is
+loosely coupled, reliable, and asynchronous.
+3.6.6. JavaMail API
+Java EE applications use the JavaMail API to send email notifications. The JavaMail API has two
+parts: an application-level interface used by the application components to send mail, and a service
+provider interface. The Java EE platform includes JavaMail with a service provider that allows
+application components to send Internet mail.
+3.6.7. Java Database Connectivity API
+The Java Database Connectivity (JDBC) API lets you invoke SQL commands from Java programming
+language methods. You use the JDBC API in an enterprise bean when you have a session bean access
+the database. You can also use the JDBC API from a servlet or a JSP page to access the database
+directly without going through an enterprise bean.
+The JDBC API has two parts: an application-level interface used by the application components to
+access a database, and a service provider interface to attach a JDBC driver to the Java EE platform.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 38
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.7. NetBeans
+A free, open-source Integrated Development Environment for software developers.
+One can get all the tools you need to create professional desktop, enterprise, web, and mobile
+applications with the Java language, C/C++, and even dynamic languages such as PHP, JavaScript,
+Groovy, and Ruby.
+NetBeans IDE is easy to install and use straight out of the box and runs on many platforms including
+Windows, Linux, Mac OS X and Solaris.
+NetBeans IDE is an integrated development environment (IDE) for writing, compiling, testing, and
+debugging desktop applications and web applications for the Java platform.
+NetBeans IDE includes a full-featured text editor with syntax highlighting and error checking, visual
+design tools, Ant support, version control system support, and many other features.
+The NetBeans IDE 6.5 provides several new features and enhancements, such as rich PHP, JavaScript
+and Ajax editing features, improved support for using the Hibernate web framework and the Java
+Persistence API, and tighter GlassFish v3 and MySQL integration.
+3.7.1. NetBeans – Developing Windows Application
+NetBeans can be used to create professional-looking GUIs with automatic spacing and alignment.
+ Professional Swing GUI Building
+Design Swing GUIs by dragging and positioning GUI components from a palette onto a canvas. The
+GUI builder automatically takes care of the correct spacing and alignment. Click into JLabels,
+JButtons, ButtonGroups, JTrees, JTextFields, ComboBoxes and edit their properties directly in place.
+You can use the GUI builder to prototype GUIs right in front of customers.
+ Intuitive and Customizable
+You can choose whether the GUI code should be generated with fully qualified or simple class names.
+The help bar displays context-sensitive hints about what can be done with the selected component and
+suggests shortcuts that can speed up your work in the future. The NetBeans IDE also comes with builtALPHA
+NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 39
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+in support for GUI localization and accessibility. If you use JDK 6 Update 10, you can now preview
+your forms in the new Nimbus look and feel.
+ Standard and Custom GUI Components
+The extensible Component Palette comes with pre-installed Swing and AWT components and includes
+a visual menu designer. Use the Component Inspector to view a component's tree and properties.
+ Swing Application Framework (JSR 296) Support
+The Swing Application Framework simplifies the handling of the application life cycle, actions and
+resources. Take advantage of the provided code-generation tools and building blocks, and develop
+small to medium-sized desktop applications faster than ever. Create menus fast and intuitively by
+dragging and dropping menu items onto the canvas; you can add mnemonics and rename menu items
+inline by clicking and typing in the Design view.
+ Beans Binding technology (JSR 295) Support
+Take advantage of Beans Binding technology and the Java Persistence API to create Swing desktop
+database applications more easily. Using the new Java Desktop Application project template, you can
+quickly set up a form that displays a database table and also enables you to modify the database. Bind a
+database table to an existing form by dragging a table from the Runtime window onto the form.
+3.7.2. NetBeans – Developing Web Application, Enterprise Application and Web Service
+Netbean can be used to write standards-based web and enterprise applications that can be accessed with
+a web browser over the internet or an intranet.
+ Web and Enterprise Application Development
+The NetBeans IDE provides tools for building all Java EE components, including web pages, servlets,
+web services, and Enterprise Java Beans (EJBs).
+ Web Frameworks
+The NetBeans IDE make it easy to create Java EE projects that rely on the Spring and Hibernate
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 40
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+frameworks. The editor supports code completion, navigation and refactoring for mapping files.
+ Easy Migration from Eclipse
+You can import Eclipse Web Application projects. Imported Eclipse projects stay synchronized with
+their original when you modify them in Eclipse.
+ Multi-Language Editor Support
+Take advantage of full syntax highlighting, code completion, pop-up documentation, and error
+checking for JSP, JSF, XML, JavaScript, CSS and PHP - even mixed.
+3.8. GlassFish
+GlassFish is an enterprise-quality Java EE 5 application server that offers advanced clustering,
+centralized administration, and best-in-class performance built by the GlassFish community. The Java
+EE SDKs contain Sun GlassFish Enterprise Server, previously named Sun Java System Application
+Server.
+Key Features of Sun GlassFish Enterprise Server :
+It complies fully with the latest Java EE 5 specification to deliver one of the best application runtimes
+for next-generation enterprise applications and web services. It implements and extends the following
+Java EE standards:
+ Enterprise Java Beans 3.0
+ JAXB 2.0
+ Java Persistence
+ Java Server Faces 1.2
+ Java Server Pages 2.1 (JSP 2.1)
+ Java Server Pages Standard Tag Library (JSTL) 1.2
+ Streaming API for XML (StAX)
+ Web Services Metadata
+ Java API for XML based Web Services 2.0 (JAX-WS 2.0)
+ Common Annotations for the Java Platform 1.0 (CAJ 1.0)
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 41
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.9. Apache Tomcat
+Apache Tomcat powers numerous large-scale, mission-critical web applications across a diverse range
+of industries and organizations.
+Apache Tomcat is developed in an open and participatory environment and released under the Apache
+Software License. Apache Tomcat is intended to be a collaboration of the best-of-breed developers
+from around the world.
+Apache Tomcat is an implementation of the Java Servlet and JavaServer Pages technologies.
+Apache Tomcat version 6.0 implements the Servlet 2.5 and JavaServer Pages 2.1
+Tomcat 6.0 is designed to run on JSE 5.0 and later. A standard installation of Tomcat 6.0 makes all of
+the following APIs available for use by web applications (by placing them in "lib"):
+* annotations-api.jar (Annotations package)
+* catalina.jar (Tomcat Catalina implementation)
+* catalina-ant.jar (Tomcat Catalina Ant tasks)
+* catalina-ha.jar (High availability package)
+* catalina-tribes.jar (Group communication)
+* el-api.jar (EL 2.1 API)
+* jasper.jar (Jasper 2 Compiler and Runtime)
+* jasper-el.jar (Jasper 2 EL implementation)
+* jasper-jdt.jar (Eclipse JDT 3.3 Java compiler)
+* jsp-api.jar (JSP 2.1 API)
+* servlet-api.jar (Servlet 2.5 API)
+* tomcat-coyote.jar (Tomcat connectors and utility classes)
+* tomcat-dbcp.jar (package renamed database connection pool based on Commons DBCP)
+One can make additional APIs available to all of your web applications by putting unpacked classes
+into a "classes" directory (not created by default), or by placing them in JAR files in the "lib" directory.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 42
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+3.10. MySQL Database Server
+MySQL, the most popular Open Source SQL database server, is developed, distributed, and supported
+by MySQL AB, now purchased by Sun MicroSystem.
+The official way to pronounce ―MySQL‖ is ―My Ess Que Ell‖ (not ―my sequel‖).
+Following are main features of MySQL:
+ MySQL is a database management system.
+A database is a structured collection of data. It may be anything from a simple shopping list to a picture
+gallery or the vast amounts of information in a corporate network. To add, access, and process data
+stored in a computer database, you need a database management system such as MySQL Server. Since
+computers are very good at handling large amounts of data, database management systems play a
+central role in computing, as standalone utilities or as parts of other applications.
+ MySQL is a relational database management system.
+A relational database stores data in separate tables rather than putting all the data in one big storeroom.
+This adds speed and flexibility. The SQL part of ―MySQL‖ stands for ―Structured Query Language.‖
+SQL is the most common standardized language used to access databases and is defined by the
+ANSI/ISO SQL Standard. The SQL standard has been evolving since 1986 and several versions exist.
+In this manual, ―SQL-92‖ refers to the standard released in 1992, ―SQL:1999‖ refers to the standard
+released in 1999, and ―SQL:2003‖ refers to the current version of the standard. We use the phrase ―the
+SQL standard‖ to mean the current version of the SQL Standard at any time.
+ MySQL software is Open Source.
+Open Source means that it is possible for anyone to use and modify the software. Anybody can
+download the MySQL software from the Internet and use it without paying anything.
+ The MySQL Database Server is very fast, reliable, and easy to use.
+MySQL Server was originally developed to handle large databases much faster than existing solutions
+and has been successfully used in highly demanding production environments for several years.
+Although under constant development, MySQL Server today offers a rich and useful set of functions.
+Its connectivity, speed, and security make MySQL Server highly suited for accessing databases on the
+Internet.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 43
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+ MySQL Server works in client/server or embedded systems.
+The MySQL Database Software is a client/server system that consists of a multi-threaded SQL server
+that supports different backends, several different client programs and libraries, administrative tools,
+and a wide range of application programming interfaces (APIs).
+ A large amount of contributed MySQL software is available.
+It is very likely that your favorite application or language supports the MySQL Database Server.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 44
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4. WEB INTERFACE
+4.1. HTML
+HTML is a language for describing web pages.
+ HTML stands for Hyper Text Markup Language
+ HTML is not a programming language, it is a markup language
+ A markup language is a set of markup tags
+ HTML uses markup tags to describe web pages
+HTML markup tags are usually called HTML tags
+ HTML tags are keywords surrounded by angle brackets like <html>
+ HTML tags normally come in pairs like <b> and </b>
+ The first tag in a pair is the start tag, the second tag is the end tag
+ Start and end tags are also called opening tags and closing tags.
+HTML Documents
+ HTML documents describe web pages
+ HTML documents contain HTML tags and plain text
+ HTML documents are also called web pages
+The purpose of a web browser (like Internet Explorer or Firefox) is to read HTML documents and
+display them as web pages. The browser does not display the HTML tags, but uses the tags to interpret
+the content of the page.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 45
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4.2. XML
+A few words about XML
+XML
+ stands for Extensible Markup Language
+ is a markup language much like HTML
+ was designed to carry data, not to display data
+ tags are not predefined. You must define your own tags
+ is designed to be self-descriptive
+ is a W3C Recommendation
+Purpose of using XML
+XML is used in many aspects of web development, often to simplify data storage and sharing.
+XML
+ separates data from html
+ simplifies data sharing
+ simplifies data transport
+ simplifies platform changes
+ makes your data more available
+Syntax of using XML
+ All XML Elements Must Have a Closing Tag
+ XML Tags are Case Sensitive
+ XML Elements Must be Properly Nested
+ XML Documents Must Have a Root Element
+ XML Attribute Values Must be Quoted
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 46
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4.3. XHTML
+XHTML is a combination of HTML and XML (EXtensible Markup Language). It consists of all the
+elements in HTML 4.01, combined with the strict syntax of XML.
+XHTML
+ stands for Extensible Hypertext Markup Language
+ is almost identical to HTML 4.01
+ is a stricter and cleaner version of HTML
+ is HTML defined as an XML application
+ is a W3C Recommendation
+Syntax of using XML:
+ XHTML elements must be properly nested
+ XHTML elements must always be closed
+ XHTML elements must be in lowercase
+ XHTML documents must have one root element
+ Attribute names must be in lower case
+ Attribute values must be quoted
+ Attribute minimization is forbidden
+ The id attribute replaces the name attribute
+ The XHTML DTD defines mandatory elements
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 47
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4.4. CSS
+A few words about CSS:
+ CSS stands for Cascading Style Sheets
+ Styles define how to display HTML elements
+ Styles are normally stored in Style Sheets
+ Styles were added to HTML 4.0 to solve a problem
+ External Style Sheets can save you a lot of work
+ External Style Sheets are stored in CSS files
+ Multiple style definitions will cascade into one
+4.4.1. CSS provides means to customize inbuilt HTML tags
+HTML tags were originally designed to define the content of a document. They were supposed to say
+"This is a header", "This is a paragraph", "This is a table", by using tags like <h1>, <p>, <table>, and
+so on. The layout of the document was supposed to be taken care of by the browser, without using any
+formatting tags.
+As the two major browsers - Netscape and Internet Explorer - continued to add new HTML tags and
+attributes (like the <font> tag and the color attribute) to the original HTML specification, it became
+more and more difficult to create Web sites where the content of HTML documents was clearly
+separated from the document's presentation layout.
+To solve this problem, the World Wide Web Consortium (W3C) - the non profit, standard setting
+consortium, responsible for standardizing HTML - created STYLES in addition to HTML 4.0.
+All major browsers support Cascading Style Sheets.
+Styles sheets define HOW HTML elements are to be displayed, just like the font tag and the color
+attribute in HTML 3.2. Styles are normally saved in external .css files. External style sheets enable you
+to change the appearance and layout of all the pages in your Web, just by editing one single CSS
+document!
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 48
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4.4.2. Multiple Styles Will Cascade Into One
+Style sheets allow style information to be specified in many ways. Styles can be specified inside a
+single HTML element, inside the <head> element of an HTML page, or in an external CSS file. Even
+multiple external style sheets can be referenced inside a single HTML document.
+Generally speaking we can say that all the styles will "cascade" into a new "virtual" style sheet by the
+following rules, where number four has the highest priority:
+Browser default
+External style sheet
+Internal style sheet (inside the <head> tag)
+Inline style (inside an HTML element)
+So, an inline style (inside an HTML element) has the highest priority, which means that it will override
+a style declared inside the <head> tag, in an external style sheet, or in a browser (a default value).
+If the external style sheet link is placed below the internal style sheet in HTML <head>, the external
+style sheet will override the internal style sheet.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 49
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+4.5. JavaScript
+JavaScript is used in millions of Web pages to improve the design, validate forms, detect browsers,
+create cookies, and much more. JavaScript is the most popular scripting language on the internet, and
+works in all major browsers, such as Internet Explorer, Firefox, and Opera.
+4.5.1. A few words about JavaScript
+ JavaScript was designed to add interactivity to HTML pages
+ JavaScript is a scripting language
+ A scripting language is a lightweight programming language
+ JavaScript is usually embedded directly into HTML pages
+ JavaScript is an interpreted language (means that scripts execute without preliminary
+compilation)
+ Everyone can use JavaScript without purchasing a license
+4.5.2. Purpose of using JavaScript
+ JavaScript gives HTML designers a programming tool - HTML authors are normally not
+programmers, but JavaScript is a scripting language with a very simple syntax! Almost anyone
+can put small "snippets" of code into their HTML pages
+ JavaScript can put dynamic text into an HTML page - A JavaScript statement like this:
+document. write("<h1>" + name + "</h1>") can write a variable text into an HTML page
+ JavaScript can react to events - A JavaScript can be set to execute when something happens,
+like when a page has finished loading or when a user clicks on an HTML element
+ JavaScript can read and write HTML elements - A JavaScript can read and change the content
+of an HTML element
+ JavaScript can be used to validate data - A JavaScript can be used to validate form data before it
+is submitted to a server. This saves the server from extra processing
+ JavaScript can be used to detect the visitor's browser - A JavaScript can be used to detect the
+visitor's browser, and - depending on the browser - load another page specifically designed for
+that browser
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 50
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+5. SOFTWARE LIFE CYCLE
+MODEL
+The software life cycle model (also called process model) is a descriptive and diagrammatic
+representation of the software life cycle. A life cycle model represents all the activities required to
+make a software product transit through its life cycle phases. It also captures the order in which these
+activities are to be undertaken. In other words, a life cycle model maps the different activities
+performed on a software product from its inception to retirement. Different life cycle models may map
+the basic development activities to phases in different ways. During any life cycle phase, more than one
+activity may also be carried out.
+5.1. Different phases of the classical waterfall model
+The classical waterfall model is intuitively the most obvious way to develop software. Though the
+classical waterfall model is elegant and intuitively obvious, it is not a practical model in the sense that it
+cannot be used in actual software development projects. Thus, this model can be considered to be a
+theoretical way of developing software. But all other life cycle models are essentially derived from the
+classical waterfall model. So, in order to be able to appreciate other life cycle models it is necessary to
+learn the classical waterfall model.
+Classical waterfall model divides the life cycle into the following phases:
+ Feasibility Study
+ Requirements Analysis and Specification
+ Design
+ Coding and Unit Testing
+ Integration and System Testing
+ Maintenance
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 51
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Figure 5-1 Waterfall Model
+5.2. Feasibility Study
+The main aim of feasibility study is to determine whether it would be financially and technically
+feasible to develop the product.
+ At first project managers or team leaders try to have a rough understanding of what is required
+to be done by visiting the client side. They study different input data to the system and output
+data to be produced by the system. They study what kind of processing is needed to be done on
+these data and they look at the various constraints on the behavior of the system.
+ After they have an overall understanding of the problem they investigate the different solutions
+that are possible. Then they examine each of the solutions in terms of what kind of resources
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 52
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+required, what would be the cost of development and what would be the development time for
+each solution.
+ Based on this analysis they pick the best solution and determine whether the solution is feasible
+financially and technically. They check whether the customer budget would meet the cost of the
+product and whether they have sufficient technical expertise in the area of development.
+5.3. Requirements Analysis and Specification
+The aim of the requirements analysis and specification phase is to understand the exact requirements of
+the customer and to document them properly. This phase consists of two distinct activities, namely
+ Requirements gathering and analysis, and
+ Requirements specification
+The goal of the requirements gathering activity is to collect all relevant information from the customer
+regarding the product to be developed. This is done to clearly understand the customer requirements so
+that incompleteness and inconsistencies are removed.
+The requirements analysis activity is begun by collecting all relevant data regarding the product to be
+developed from the users of the product and from the customer through interviews and discussions.
+The data collected from such a group of users usually contain several contradictions and ambiguities,
+since each user typically has only a partial and incomplete view of the system. Therefore it is necessary
+to identify all ambiguities and contradictions in the requirements and resolve them through further
+discussions with the customer. After all ambiguities, inconsistencies, and incompleteness have been
+resolved and all the requirements properly understood, the requirements specification activity can start.
+During this activity, the user requirements are systematically organized into a Software Requirements
+Specification (SRS) document.
+The customer requirements identified during the requirements gathering and analysis activity are
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 53
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+organized into a SRS document. The important components of this document are functional
+requirements, the nonfunctional requirements, and the goals of implementation.
+5.4. Design
+The goal of the design phase is to transform the requirements specified in the SRS document into a
+structure that is suitable for implementation in some programming language. In technical terms, during
+the design phase the software architecture is derived from the SRS document. Two distinctly different
+approaches are available: the traditional design approach and the object-oriented design approach.
+ Traditional design approach
+Traditional design consists of two different activities; first a structured analysis of the requirements
+specification is carried out where the detailed structure of the problem is examined. This is followed by
+a structured design activity. During structured design, the results of structured analysis are transformed
+into the software design.
+ Object-oriented design approach
+In this technique, various objects that occur in the problem domain and the solution domain are first
+identified, and the different relationships that exist among these objects are identified. The object
+structure is further refined to obtain the detailed design.
+5.5. Coding and Unit Testing
+The purpose of the coding and unit testing phase (sometimes called the implementation phase) of
+software development is to translate the software design into source code. Each component of the
+design is implemented as a program module. The end-product of this phase is a set of program modules
+that have been individually tested.
+During this phase, each module is unit tested to determine the correct working of all the individual
+modules.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 54
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+5.6. Integration and System Testing
+Integration of different modules is undertaken once they have been coded and unit tested. During the
+integration and system testing phase, the modules are integrated in a planned manner. The different
+modules making up a software product are almost never integrated in one shot. Integration is normally
+carried out incrementally over a number of steps. During each integration step, the partially integrated
+system is tested and a set of previously planned modules are added to it. Finally, when all the modules
+have been successfully integrated and tested, system testing is carried out. The goal of system testing is
+to ensure that the developed system conforms to its requirements laid out in the SRS document. System
+testing usually consists of three different kinds of testing activities:
+ α – testing: It is the system testing performed by the development team.
+ β – testing: It is the system testing performed by a friendly set of customers.
+ acceptance testing: It is the system testing performed by the customer himself after the product
+delivery to determine whether to accept or reject the delivered product.
+System testing is normally carried out in a planned manner according to the system test plan document.
+The system test plan identifies all testing-related activities that must be performed, specifies the
+schedule of testing, and allocates resources. It also lists all the test cases and the expected outputs for
+each test case.
+5.7. Maintenance
+Maintenance of a typical software product requires much more than the effort necessary to develop the
+product itself. Maintenance involves performing any one or more of the following three kinds of
+activities:
+ Correcting errors that were not discovered during the product development phase. This is called
+corrective maintenance.
+ Improving the implementation of the system, and enhancing the functionalities of the system
+according to the customer’s requirements. This is called perfective maintenance.
+ Porting the software to work in a new environment. For example, porting may be required to get
+the software to work on a new computer platform or with a new operating system. This is called
+adaptive maintenance.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 55
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6. PROJECT
+WEBDRIVE EXPLORER
+6.1. Software Requirement Specification
+6.1.1. Overview
+Definitions
+User: User is a person who will use the application according to the rights assigned to him.
+WebDriveExplorer: A web based environment using which a user can browse his/her files on server
+machine from any browser. A user will be able to download and upload his/her files on a central
+location on using internet.
+Overview
+WebDriveExplorer will provide an online environment to the users using which users will be able to
+browse his data saved on a drive on the server machine.
+Users will be able to upload and download a file from the server machine
+WebDriveExplorer will allow a user to place or remove a file on the server machine. User will be able
+to rename a folder and also he will be able to create new folders on the drive.
+All the operations such as upload/download file, add/remove folders etc will be done by users
+according to the rights assigned to them
+The various features of the WebDriveExplorer are:
+ It provides space on internet to create folders and files.
+ It helps in sharing data in the form of files stored on the internet.
+ Data can be easily uploaded and downloaded using WebDriveExplorer.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 56
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+ It is secure as access to WebDriveExplorer will be given to users having a username and
+password.
+ Data on WebDrive can be accessed from anywhere as iWebDriveExplorer can be accessed from
+any machine having internet.
+6.1.2. Current System
+In the current system user has to store his/her files on the local system as no provision to store files on
+the central system are available. Even if there is a provision to store files on central system, one has to
+connect to the central system using manual connection to network. In the current system if user has the
+connection rights to the central system then he/she can access all the folders and files of that particular
+system, instead of selected ones.
+In the current system user can access the files, create, and delete folders from within the local network
+only. No provision of accessing the drive from internet is available in the current system.
+Limitations of the current system:
+ There is no centralization of data of users.
+ User cannot access his/her files from a remote machine using internet.
+ No provision to upload a file to a central system using browsers.
+ No Provision to download files from a central system using browser.
+ In current system even if user can access a central system in a local network to copy files, it is
+not secure as user has access to folders and files of other users on the that system. Using
+WebDriveExplorer a user will not have a direct access to central machine and all the access to
+his files and folders will be through browser.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 57
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.1.3. Business Functions Provided in Proposed System
+ Login: Users of the system would be required to login into the system. After authentication user
+would be able to login into the system and use the functionality for which he would be
+authorized.
+ Maintain User Account: Users of the system would be able to edit/update their account details.
+ Download/Upload file: Using this, users will be able to upload and download file from server.
+All the functionality to manage uploading and downloading files will be achieved by this
+business function.
+ DriveExplorer: Using this business function support to browse the data on server will be
+developed. All users will be able to manage their folders, files on the server machine.
+ ShareManager : Using this business function users will be able to share their files and folders
+with other users.
+ Generate Reports: System will be able to generate various reports required by users.
+6.1.4. Input Requirements of the System
+ Login Details
+ User Details
+ Input files
+ Information of user rights
+ Details of drive space allocation to users
+6.1.5. Output Requirements of the System
+ A web based environment using which user would be able to browse his/her data on server
+machine.
+ Functionality to upload and download file on server machine.
+ Reports
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 58
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.1.6. Special User Requirements
+ Automatic Email Generation to the concerned person
+ Sharing of resources between users.
+6.1.7. Modules
+ Admin Module: Admin module is the central module of the system. This module will allow
+admin users to configure the system with required information like roles of users, their access
+rights. This module will be used by admin to manage all the users of WebDriveExplorer.
+ Registered User Module: All the functionality required for registered user such as managing
+profile, managing files and folders , sharing files and folders, will be achieved in this module.
+ Uploader Module: This module will allow users to upload files to the central system using
+WebDriveExplorer. This module will be accessible to users.
+ Downloader Module: This module will allow users to download files from the central system
+using WebDriveExplorer.
+6.1.8. Users of the System
+The different users of the system are:
+ Administrator: Administrator is the super user of the application. Administrator will manage
+different users of the application and their access rights.Space allocation on WebDrive to users
+will also be managed by the administrator.
+ User: These are the registered users of the application. Each users will have a space on the
+server where they will be able to upload files and also they will be able to download files from
+the allocated space.Users will also be able to share files and folders. They will be able to
+perform the tasks according to the rights assigned by the administrator.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 59
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.1.9. Technologies to be used
+ Java is Platform Independent, Secure, Object Oriented, Scalable, and Robust Programming
+Language.
+It consists of two parts:
+JVM
+stands for Java Virtual Machine, which is run time environment to execute the java
+programs.
+Java
+API (Application Programming Interface) that consists of inbuilt classes used in
+java programs.
+ JDBC
+JDBC (Java Database Connectivity) is an API, which is used for the communication of java
+programs with different databases.
+ Java Mail API
+The JavaMail API provides a platform-independent and protocol-independent framework to build
+mail and messaging applications.
+ Servlets
+Servlets are basically a part of Java Platform, Enterprise Edition (Java EE) and is a technology that
+is used for extending the functionality of the servers that host application access via requestresponse
+programming model.
+ JSP
+JSP (Java Server Pages) a technology of Java Platform, Enterprise Edition (Java EE) is used for
+server-side programming and with the help of JSP we can segregate the work of a web designer and
+a developer.
+ JasperReports
+JasperReports is an open source reporting engine. Using JasperReports reports can generated in any
+type of application i.e. console application, desktop application, web application, enterprise
+application.
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 60
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+ MySQL
+MySQL is used as database, used to store data. It is RDBMS.
+ Scripting Languages
+HTML
+& CSS
+JavaScript
+XML,
+XHTML
+AJAX
+ Others
+UML
+Ant
+– Used for deployment
+JUnit
+– Unit Testing.
+6.1.10. Software Requirements
+ JDK 1.6 - NetBeans 6.5.1
+ Database - MySQL Database Server 5.0
+ Reports - JasperReports 3.7.6
+ Web Server - Tomcat 6.0.18
+ Application Server - GlassFish v2.1
+ Testing Tool - JUnit 4.5
+ Deployment Tool - Ant 1.7
+ Operating System - Windows 7 / Vista / XP sp3 / Linux Fedora
+6.1.11. Hardware Requirements
+ Intel P4 processor with minimum 2.0Ghz Speed
+ RAM: Minimum 512MB
+ Hard Disk: Minimum 20GB
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 61
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.2. Data Model
+Figure 6-1 Data Model (Part 1)
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 62
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+Figure 6-2 Data Model (Part 2)
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 63
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3. Data Flow Diagrams
+6.3.1. Trail Request Maintenance
+Figure 6-3 Trail Request Maintenance
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 64
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.2. Approve User on Trial
+Figure 6-4 Approve User on Trial
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 65
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.3. Web Drive Plan Maintenance
+Figure 6-5 Web Drive Plan Maintenance
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 66
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.4. Profile Management
+Figure 6-6 Profile Management
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 67
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.5. Manage Web Drive
+Figure 6-7 Manage Web Drive
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 68
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.6. Share Files
+Figure 6-8 Share Files
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 69
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.3.7. View Shared Files
+Figure 6-9 View Shared Files
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 70
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4. Screen Layouts
+6.4.1. Login
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 71
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.2. Manage WebDrive Plan
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 72
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.3. Trial Request Maintenance
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 73
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.4. Manage All Files
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 74
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.5. View Recent Activities
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 75
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.6. Upload File
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 76
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.7. Create Folder
+6.4.8. Share Files
+ALPHA NET TECHNOLOGIES PVT. LTD. INDUSTRIAL TRAINING FEBRUARY-JUNE 2011
+Page | 77
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING, CEC, LANDRAN, MOHALI
+6.4.9. Show Starred Files
